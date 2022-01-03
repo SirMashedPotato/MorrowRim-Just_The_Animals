@@ -10,3 +10,7 @@ C:\Users\andre\Desktop\Rimworld\MorrowRim\. Smaller\MorrowRim - Just the Animals
 C:\Users\andre\Desktop\Rimworld\MorrowRim\. Smaller\MorrowRim - Just the Animals\1.3\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.csprojAssemblyReference.cache
 C:\Users\andre\Desktop\Rimworld\MorrowRim\. Smaller\MorrowRim - Just the Animals\1.3\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\Rimworld\MorrowRim\. Smaller\MorrowRim - Just the Animals\1.3\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.dll
+J:\Modding\Github\MorrowRim-Just_The_Animals\1.3\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.csprojAssemblyReference.cache
+J:\Modding\Github\MorrowRim-Just_The_Animals\1.3\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.csproj.CoreCompileInputs.cache
+J:\Modding\Github\MorrowRim-Just_The_Animals\1.3\Source\MorrowRim\MorrowRim\obj\Debug\MorrowRim.dll
+J:\Modding\Github\MorrowRim-Just_The_Animals\1.3\Assemblies\MorrowRim.dll

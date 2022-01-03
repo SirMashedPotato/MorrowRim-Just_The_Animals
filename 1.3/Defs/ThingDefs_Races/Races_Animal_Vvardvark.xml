@@ -5,10 +5,8 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MorrowRim_Vvardvark</defName>
 		<label>vvardvark</label>
-		<modExtensions>
-		
-		</modExtensions>
-		<description>A peculiar creature, accidentally created by the Telvanni, which have since adapted to life in the ashlands. They use their long spiny tongue to scrounge up insects, or scrape apart plant and animal matter. Vvardvark are often owned as pets, as they have a relatively high rate of nuzzling. Some also collect them, as they come in many different colour morphs. Before adopting a vvardvark one should be warned that they emit a rather unpleasant odour, and are somewhat filthy.\n\nLike many ashland natives vvardvark are resistant to the effects of ash-storms.</description>
+
+		<description>A peculiar creature, accidentally created by the Telvanni, which have since adapted to life in the ashlands. They use their long spiny tongue to scrounge up insects, or scrape apart plant and animal matter. Vvardvark are often owned as pets, as they have a relatively high rate of nuzzling. Some also collect them, as they come in many different colour morphs. Before adopting a vvardvark one should be warned that they emit a rather unpleasant odour, and are somewhat filthy.</description>
 		<statBases>
 		  <ToxicSensitivity>0.6</ToxicSensitivity>
 		  <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
@@ -16,7 +14,7 @@
 		  <MoveSpeed>2.6</MoveSpeed>
 		  <MarketValue>150</MarketValue>
 		  <ComfyTemperatureMin>5</ComfyTemperatureMin>
-		  <FilthRate>1</FilthRate>
+		  <FilthRate>2</FilthRate>
 		</statBases>
 		<uiIconScale>1.5</uiIconScale>
 		<tools>
@@ -52,7 +50,7 @@
 		  <nameOnTameChance>1</nameOnTameChance>
 		  <trainability>None</trainability>
 		  <wildness>0.2</wildness>
-		  <nuzzleMtbHours>18</nuzzleMtbHours>
+		  <nuzzleMtbHours>16</nuzzleMtbHours>
 		  <gestationPeriodDays>11</gestationPeriodDays>
 		  <litterSizeCurve>
 			<points>

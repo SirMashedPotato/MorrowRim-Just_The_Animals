@@ -7,10 +7,10 @@
 
 		<defName>MorrowRim_AshPanther</defName>
 		<label>ash panther</label>
-		<description>A large species of cat that has adapted to life in the ashlands. The colouration of its fur allows it to easily blend in amongst the ash covered terrain, waiting patiently for prey to get close. The ash panther then strikes with its claws, causing deep lacerations that bleed profusely.\n\nLike many ashland natives ash panther are resistant to the effects of ash-storms.</description>
+		<description>A large species of cat that has adapted to life in the ashlands. The colouration of its fur allows it to easily blend in amongst the ash covered terrain, waiting patiently for prey to get close. The ash panther then strikes with its claws, causing deep lacerations that bleed profusely.</description>
 		<statBases>
 		  <ComfyTemperatureMin>-20</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>30</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 		  <MarketValue>500</MarketValue>
 		  <FilthRate>2</FilthRate>
 		</statBases>

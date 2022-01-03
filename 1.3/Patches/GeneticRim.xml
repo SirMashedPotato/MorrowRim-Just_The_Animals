@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Patch for Recipes_Genes -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Genetic Rim</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- add parts -->
+			
+				<!--<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name = "GR_ArmImplants"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_Insect_Arm</li>
+					</value>
+				</li>-->
+			
+				<!-- add genetics -->
+				
+				<!-- Rodent -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_Scamp</li>
+						<li>Corpse_MorrowRim_Vvardvark</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_Scamp</li>
+						<li>Corpse_MorrowRim_Vvardvark</li>
+					</value>
+				</li>
+				
+			
+				<!-- Reptiles -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptilian"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_Guar</li>
+						<li>Corpse_MorrowRim_AlbinoGuar</li>
+						<li>Corpse_MorrowRim_Alit</li>
+						<li>Corpse_MorrowRim_Kagouti</li>
+						<li>Corpse_MorrowRim_Durzog</li>
+						<li>Corpse_MorrowRim_CliffRacer</li>
+						<li>Corpse_MorrowRim_TigerGuar</li>
+						<li>MorrowRim_BantamGuar</li>
+						<li>MorrowRim_Wormmouth</li>
+						<li>MorrowRim_Scuttler</li>
+
+						<li>Corpse_MorrowRim_Clannfear</li>
+						<li>Corpse_MorrowRim_Daedroth</li>
+						<li>Corpse_MorrowRim_Ogrim</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptilian"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_Guar</li>
+						<li>Corpse_MorrowRim_AlbinoGuar</li>
+						<li>Corpse_MorrowRim_Alit</li>
+						<li>Corpse_MorrowRim_Kagouti</li>
+						<li>Corpse_MorrowRim_Durzog</li>
+						<li>Corpse_MorrowRim_CliffRacer</li>
+						<li>Corpse_MorrowRim_TigerGuar</li>
+						<li>MorrowRim_BantamGuar</li>
+						<li>MorrowRim_Wormmouth</li>
+						<li>MorrowRim_Scuttler</li>
+
+						<li>Corpse_MorrowRim_Clannfear</li>
+						<li>Corpse_MorrowRim_Daedroth</li>
+						<li>Corpse_MorrowRim_Ogrim</li>
+					</value>
+				</li>
+				
+				<!-- Insects -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_SiltStrider</li>
+						<li>Corpse_MorrowRim_NixHound</li>
+						<li>Corpse_MorrowRim_Shalk</li>
+						<li>Corpse_MorrowRim_AshHopper</li>
+						<li>Corpse_MorrowRim_KwamaScrib</li>
+						<li>Corpse_MorrowRim_KwamaForager</li>
+						<li>Corpse_MorrowRim_KwamaWarrior</li>
+						<li>Corpse_MorrowRim_KwamaWorker</li>
+						<li>Corpse_MorrowRim_AshHopper</li>
+						<li>MorrowRim_NixOx</li>
+						<li>MorrowRim_FungalShalk</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_SiltStrider</li>
+						<li>Corpse_MorrowRim_NixHound</li>
+						<li>Corpse_MorrowRim_Shalk</li>
+						<li>Corpse_MorrowRim_AshHopper</li>
+						<li>Corpse_MorrowRim_KwamaScrib</li>
+						<li>Corpse_MorrowRim_KwamaForager</li>
+						<li>Corpse_MorrowRim_KwamaWarrior</li>
+						<li>Corpse_MorrowRim_KwamaWorker</li>
+						<li>Corpse_MorrowRim_AshHopper</li>
+						<li>MorrowRim_NixOx</li>
+						<li>MorrowRim_FungalShalk</li>
+					</value>
+				</li>
+				
+								
+				<!-- cats -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>MorrowRim_AshPanther</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>MorrowRim_AshPanther</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

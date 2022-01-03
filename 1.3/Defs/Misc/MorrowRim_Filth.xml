@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>MorrowRim_Filth_NetchBlood</defName>
+		<label>netch blood</label>
+		<statBases>
+		  <Beauty>-30</Beauty>
+		  <Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Filth/PoolSoft</texPath>
+		  <color>(146, 100, 156, 50)</color>
+		</graphicData>
+		<filth>
+		  <rainWashes>true</rainWashes>
+		  <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+		  <canFilthAttach>true</canFilthAttach>
+		</filth>
+	</ThingDef>
+  
+	<ThingDef ParentName="BaseFilth">
+		<defName>MorrowRim_Filth_RetchingNetchBlood</defName>
+		<label>netch blood</label>
+		<statBases>
+		  <Beauty>-30</Beauty>
+		  <Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Filth/PoolSoft</texPath>
+		  <color>(79, 173, 145, 50)</color>
+		</graphicData>
+		<filth>
+		  <rainWashes>true</rainWashes>
+		  <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+		  <canFilthAttach>true</canFilthAttach>
+		</filth>
+	</ThingDef>
+
+</Defs>

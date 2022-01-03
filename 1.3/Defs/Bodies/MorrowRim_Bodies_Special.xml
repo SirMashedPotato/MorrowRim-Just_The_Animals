@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>MorrowRim_Jelly</defName>
+		<label>jellyfish like</label>
+		<corePart>
+		  <def>MorrowRim_Netch_Shell</def>
+		  <height>Middle</height>
+		  <depth>Outside</depth>
+		  <parts>
+			<li>
+			  <def>MorrowRim_Netch_Underbelly</def>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_GastricCavity</def>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Heart</def>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_LevitationSac</def>
+			  <customLabel>first levitation sac</customLabel>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_LevitationSac</def>
+			  <customLabel>second levitation sac</customLabel>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_LevitationSac</def>
+			  <customLabel>third levitation sac</customLabel>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Head</def>
+			  <coverage>0.12</coverage>
+			  <groups>
+				<li>HeadAttackTool</li>
+			  </groups>
+			  <parts>
+				<li>
+				  <def>Brain</def>
+				  <coverage>0.18</coverage>
+				  <depth>Inside</depth>
+				</li>
+				<li>
+				  <def>MorrowRim_Netch_SensoryOrgan</def>
+				  <customLabel>left sensory organ</customLabel>
+				  <coverage>0.15</coverage>
+				  <depth>Inside</depth>
+				</li>
+				<li>
+				  <def>MorrowRim_Netch_SensoryOrgan</def>
+				  <customLabel>right sensory organ</customLabel>
+				  <coverage>0.15</coverage>
+				  <depth>Inside</depth>
+				</li>
+				<li>
+				  <def>AnimalJaw</def>
+				  <coverage>0.20</coverage>
+				</li>
+			  </parts>
+			</li>
+			<!-- tentacles -->
+			<li>
+			  <def>MorrowRim_Netch_Tentacle</def>
+			  <customLabel>front left tentacle</customLabel>
+			  <coverage>0.05</coverage>
+			  <height>Bottom</height>
+              <groups>
+                <li>MorrowRim_TentacleAttackTool_FL</li>
+              </groups>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_Tentacle</def>
+			  <customLabel>front right tentacle</customLabel>
+			  <coverage>0.05</coverage>
+			  <height>Bottom</height>
+			  <groups>
+                <li>MorrowRim_TentacleAttackTool_FR</li>
+              </groups>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_Tentacle</def>
+			  <customLabel>middle left tentacle</customLabel>
+			  <coverage>0.05</coverage>
+			  <height>Bottom</height>
+			  <groups>
+                <li>MorrowRim_TentacleAttackTool_ML</li>
+              </groups>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_Tentacle</def>
+			  <customLabel>middle right tentacle</customLabel>
+			  <coverage>0.05</coverage>
+			  <height>Bottom</height>
+			  <groups>
+                <li>MorrowRim_TentacleAttackTool_MR</li>
+              </groups>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_Tentacle</def>
+			  <customLabel>rear left tentacle</customLabel>
+			  <coverage>0.05</coverage>
+			  <height>Bottom</height>
+			  <groups>
+                <li>MorrowRim_TentacleAttackTool_BL</li>
+              </groups>
+			</li>
+			<li>
+			  <def>MorrowRim_Netch_Tentacle</def>
+			  <customLabel>rear right tentacle</customLabel>
+			  <coverage>0.05</coverage>
+			  <height>Bottom</height>
+			  <groups>
+                <li>MorrowRim_TentacleAttackTool_BR</li>
+              </groups>
+			</li>
+		  </parts>
+		</corePart>
+	</BodyDef>
+  
+	<BodyDef>
+		<defName>MorrowRim_Flea</defName>
+		<label>flea like</label>
+		<corePart>
+		  <def>Shell</def>
+		  <height>Middle</height>
+		  <depth>Outside</depth>
+		  <parts>
+			<li>
+			  <def>Stomach</def>
+			  <coverage>0.05</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>InsectHeart</def>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Pronotum</def>
+			  <coverage>0.18</coverage>
+			  <height>Top</height>
+			  <parts>
+				<li>
+				  <def>InsectHead</def>
+				  <coverage>0.65</coverage>
+				  <groups>
+					<li>HeadAttackTool</li>
+				  </groups>
+				  <parts>
+					<li>
+					  <def>Brain</def>
+					  <coverage>0.2</coverage>
+					  <depth>Inside</depth>
+					</li>
+					<li>
+					  <def>Eye</def>
+					  <customLabel>left eye</customLabel>
+					  <coverage>0.12</coverage>
+					</li>
+					<li>
+					  <def>Eye</def>
+					  <customLabel>right eye</customLabel>
+					  <coverage>0.12</coverage>
+					</li>
+					<li>
+					  <def>InsectNostril</def>
+					  <coverage>0.06</coverage>
+					</li>
+					<li>
+					  <def>InsectMouth</def>
+					  <coverage>0.08</coverage>
+					  <groups>
+						<li>Mouth</li>
+					  </groups>
+					</li>
+				  </parts>
+				</li>
+			  </parts>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>front left leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>front right leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>middle left leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>middle right leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>rear left leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>rear right leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<!-- arms -->
+			<li>
+			  <def>MorrowRim_Insect_Arm</def>
+			  <customLabel>front right arm</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			  <groups>
+				<li>MorrowRim_InsectArmAttackTool_R</li>
+			  </groups>
+			</li>
+			<li>
+			  <def>MorrowRim_Insect_Arm</def>
+			  <customLabel>front left arm</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			  <groups>
+				<li>MorrowRim_InsectArmAttackTool_L</li>
+			  </groups>
+			</li>
+		  </parts>
+		</corePart>
+	</BodyDef>
+	
+	<BodyDef>
+		<defName>MorrowRim_Tick</defName>
+		<label>tick like</label>
+		<corePart>
+		  <def>Shell</def>
+		  <height>Middle</height>
+		  <depth>Outside</depth>
+		  <parts>
+			<li>
+			  <def>Stomach</def>
+			  <coverage>0.05</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>InsectHeart</def>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Pronotum</def>
+			  <coverage>0.18</coverage>
+			  <height>Top</height>
+			  <parts>
+				<li>
+				  <def>InsectHead</def>
+				  <coverage>0.65</coverage>
+				  <groups>
+					<li>HeadAttackTool</li>
+				  </groups>
+				  <parts>
+					<li>
+					  <def>Brain</def>
+					  <coverage>0.2</coverage>
+					  <depth>Inside</depth>
+					</li>
+					<li>
+					  <def>Eye</def>
+					  <customLabel>left eye</customLabel>
+					  <coverage>0.12</coverage>
+					</li>
+					<li>
+					  <def>Eye</def>
+					  <customLabel>right eye</customLabel>
+					  <coverage>0.12</coverage>
+					</li>
+					<li>
+					  <def>InsectNostril</def>
+					  <coverage>0.06</coverage>
+					</li>
+					<li>
+					  <def>InsectMouth</def>
+					  <coverage>0.08</coverage>
+					  <groups>
+						<li>Mouth</li>
+					  </groups>
+					</li>
+				  </parts>
+				</li>
+			  </parts>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>front left leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>front right leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>middle left leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>middle right leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>rear left leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+			<li>
+			  <def>InsectLeg</def>
+			  <customLabel>rear right leg</customLabel>
+			  <coverage>0.06</coverage>
+			  <height>Bottom</height>
+			</li>
+		  </parts>
+		</corePart>
+	</BodyDef>
+  
+	<BodyDef>
+		<defName>MorrowRim_FlyingHellSpawn</defName>
+		<label>bird</label>
+		<corePart>
+		  <def>Body</def>
+		  <height>Middle</height>
+		  <depth>Outside</depth>
+		  <parts>
+			<li>
+			  <def>Tail</def>
+			  <coverage>0.10</coverage>
+			  <groups>
+				<li>MorrowRim_TailAttackTool</li>
+			  </groups>
+			</li>
+			<li>
+			  <def>Spine</def>
+			  <coverage>0.05</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Stomach</def>
+			  <coverage>0.04</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Heart</def>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Lung</def>
+			  <customLabel>left lung</customLabel>
+			  <coverage>0.04</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Lung</def>
+			  <customLabel>right lung</customLabel>
+			  <coverage>0.04</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Kidney</def>
+			  <customLabel>left kidney</customLabel>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Kidney</def>
+			  <customLabel>right kidney</customLabel>
+			  <coverage>0.03</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Liver</def>
+			  <coverage>0.05</coverage>
+			  <depth>Inside</depth>
+			</li>
+			<li>
+			  <def>Neck</def>
+			  <coverage>0.2</coverage>
+			  <height>Top</height>
+			  <parts>
+				<li>
+				  <def>Head</def>
+				  <coverage>0.75</coverage>
+				  <groups>
+					<li>HeadAttackTool</li>
+				  </groups>
+				  <parts>
+					<li>
+					  <def>Skull</def>
+					  <coverage>0.30</coverage>
+					  <depth>Inside</depth>
+					  <parts>
+						<li>
+						  <def>Brain</def>
+						  <coverage>0.60</coverage>
+						  <depth>Inside</depth>
+						</li>
+					  </parts>
+					</li>
+					<li>
+					  <def>Eye</def>
+					  <customLabel>left eye</customLabel>
+					  <coverage>0.12</coverage>
+					</li>
+					<li>
+					  <def>Eye</def>
+					  <customLabel>right eye</customLabel>
+					  <coverage>0.12</coverage>
+					</li>
+					<li>
+					  <def>Beak</def>
+					  <coverage>0.25</coverage>
+					  <groups>
+						<li>Beak</li>
+					  </groups>
+					</li>
+				  </parts>
+				</li>
+			  </parts>
+			</li>
+			<li>
+			  <def>MorrowRim_CliffRacer_Wing</def>
+			  <customLabel>left wing</customLabel>
+			  <coverage>0.07</coverage>
+			  <height>Middle</height>
+			</li>
+			<li>
+			  <def>MorrowRim_CliffRacer_Wing</def>
+			  <customLabel>right wing</customLabel>
+			  <coverage>0.07</coverage>
+			  <height>Middle</height>
+			</li>
+			
+			<li>
+			  <def>MorrowRim_CliffRacer_Sail</def>
+			  <customLabel>upper sail</customLabel>
+			  <coverage>0.03</coverage>
+			  <height>Top</height>
+			</li>
+			<li>
+			  <def>MorrowRim_CliffRacer_Sail</def>
+			  <customLabel>lower sail</customLabel>
+			  <coverage>0.03</coverage>
+			  <height>Bottom</height>
+			</li>
+		  </parts>
+		</corePart>
+	</BodyDef>
+  
+</Defs>

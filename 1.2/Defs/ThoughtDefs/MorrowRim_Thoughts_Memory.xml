@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>MorrowRim_ateNixOxMilk</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>consumed raw nix ox mucus</label>
+			<description>Bleh, tastes like old socks!</description>
+			<baseMoodEffect>-3</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>MorrowRim_ateInsectEggDirect</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>ate insect egg</label>
+			<description>I ate some slimy insect eggs. It was, possibly, the most disgusting thing I've ever tasted.</description>
+			<baseMoodEffect>-6</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_ateInsectEggAsIngredient</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>ate cooked insect egg</label>
+			<description>I ate a meal cooked with slimy insect eggs. The seasoning partly covered the taste, but there were fluid pockets in there that I can't identify.</description>
+			<baseMoodEffect>-2</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

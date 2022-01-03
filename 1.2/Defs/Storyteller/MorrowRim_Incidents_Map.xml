@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =========================== Neutral ============================-->
+  
+	<IncidentDef>
+		<defName>MorrowRim_SiltStriderPasses</defName>
+		<label>silt strider pass</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MorrowRim.IncidentWorker_SiltStrider</workerClass>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>13</minRefireDays>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>MorrowRim_AlbinoGuarPasses</defName>
+		<label>white guar pass</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MorrowRim.IncidentWorker_AlbinoGuar</workerClass>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>13</minRefireDays>
+	</IncidentDef>
+
+  <!--========================== Bad ===============================-->
+
+	<IncidentDef>
+		<defName>MorrowRim_CliffRacerSwarm</defName>
+		<label>cliff racer swarm</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MorrowRim.IncidentWorker_CliffRacerSwarm</workerClass>
+		<baseChance>1.5</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<!--<pointsScaleable>true</pointsScaleable>-->
+	</IncidentDef>
+  
+    <IncidentDef>
+		<defName>MorrowRim_CliffRacerSwarm_Manhunter</defName>
+		<label>manhunter cliff racer swarm</label>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MorrowRim.IncidentWorker_CliffRacerSwarm_Manhunter</workerClass>
+		<baseChance>0.5</baseChance>
+		<category>ThreatBig</category>
+		<minRefireDays>30</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+	</IncidentDef>
+
+</Defs>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Range Animal Framework</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+		
+			<!-- MorrowRim_Hunger -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+				
+					<DamageDef>
+						<defName>MorrowRim_HungerBile</defName>
+						<label>toxic bile</label>
+						<workerClass>DamageWorker_AddInjury</workerClass>
+						<externalViolence>true</externalViolence>
+						<deathMessage>{0} has been burnt to death.</deathMessage>
+						<hediff>Burn</hediff>
+						<hediffSolid>Crack</hediffSolid>
+						<impactSoundType>Blunt</impactSoundType>
+						<makesBlood>false</makesBlood>
+						<armorCategory>Heat</armorCategory>
+						<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+						<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+						<additionalHediffs>
+						  <li>
+							<hediff>ToxicBuildup</hediff>
+							<severityPerDamageDealt>0.005</severityPerDamageDealt>
+							<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+							<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+						  </li>
+						</additionalHediffs>
+					</DamageDef>
+
+					<ThingDef>
+						<defName>MorrowRim_ProjectileHungerBile</defName>
+						<tickerType>Normal</tickerType>
+						<thingClass>Bullet</thingClass>
+						<category>Projectile</category>
+						<label>hunger bile</label>
+						<useHitPoints>False</useHitPoints>
+						<neverMultiSelect>True</neverMultiSelect>
+						<graphicData>
+						  <shaderType>Transparent</shaderType>
+						  <graphicClass>Graphic_Single</graphicClass>
+						  <texPath>MorrowRim/Projectile/HungerBile</texPath>
+						</graphicData>
+						<projectile>
+						  <damageDef>MorrowRim_HungerBile</damageDef>
+						  <damageAmountBase>10</damageAmountBase>
+						  <stoppingPower>0.3</stoppingPower>
+						  <speed>40</speed>
+						</projectile>
+					</ThingDef>
+				
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MorrowRim_Hunger"]</xpath>
+				<value>
+					<verbs>
+						<li>
+							<verbClass>Verb_Shoot</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>MorrowRim_ProjectileHungerBile</defaultProjectile>
+							<warmupTime>1.8</warmupTime>
+							<range>10.9</range>
+							<soundCast>Hive_Spawn</soundCast>
+							<muzzleFlashScale>9</muzzleFlashScale>
+							<targetParams>
+							  <canTargetLocations>true</canTargetLocations>
+							</targetParams>
+							<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+							<!-- -->
+							<accuracyTouch>0.80</accuracyTouch>
+							<accuracyShort>0.60</accuracyShort>
+							<accuracyMedium>0.40</accuracyMedium>
+							<accuracyLong>0.20</accuracyLong>
+							<defaultCooldownTime>1.6</defaultCooldownTime>
+						</li>
+					</verbs>
+				</value>
+			</li>
+	
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

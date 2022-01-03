@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+			<value>
+
+				<MorrowRim_Guar>10</MorrowRim_Guar>
+				<MorrowRim_NixOx>5</MorrowRim_NixOx>
+				<MorrowRim_SiltStrider>1</MorrowRim_SiltStrider>
+
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+			<value>
+
+				<MorrowRim_Guar>10</MorrowRim_Guar>
+				<MorrowRim_NixOx>5</MorrowRim_NixOx>
+				<MorrowRim_SiltStrider>0.01</MorrowRim_SiltStrider>
+
+			</value>
+	</Operation>
+	
+	<!--<Operation Class="PatchOperationAdd"> 
+		<xpath>/Defs/FactionDef[@Name="Empire"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+			<value>
+
+				<MorrowRim_Guar>5</MorrowRim_Guar>
+				<MorrowRim_SiltStrider>3</MorrowRim_SiltStrider>
+
+			</value>
+	</Operation>-->
+
+
+</Patch>

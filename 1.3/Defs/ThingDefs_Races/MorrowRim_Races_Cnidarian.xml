@@ -6,16 +6,15 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MorrowRim_Netch</defName>
 		<label>netch</label>
-
-		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nOften farmed by ashlanders for their jelly and leather. Netch are highly protective of their eggs and lay them on their body, preventing the possibilty of harvesting them.\n\nLike many ashland natives netch are resistant to the effects of ash-storms.</description>
+		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nOften farmed by ashlanders for their jelly and leather. Netch are highly protective of their eggs and lay them on their body, preventing the possibilty of harvesting them.</description>
 		<statBases>
 		  <ToxicSensitivity>0</ToxicSensitivity>
 		  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 		  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 		  <MoveSpeed>3.0</MoveSpeed>
 		  <MarketValue>300</MarketValue>
-		  <ComfyTemperatureMin>5</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+		  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <MeatAmount>0</MeatAmount>
 		  <FilthRate>0</FilthRate>
 		</statBases>
@@ -107,8 +106,8 @@
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>MorrowRim_NetchJelly</milkDef>
-				<milkIntervalDays>2.4</milkIntervalDays>
-				<milkAmount>12</milkAmount>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>18</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
@@ -123,7 +122,7 @@
 		  <foodType>VegetarianRoughAnimal</foodType>
 		  <leatherDef>MorrowRim_NetchLeather</leatherDef>
 		  <trainability>None</trainability>
-		  <gestationPeriodDays>35</gestationPeriodDays>
+		  <gestationPeriodDays>7</gestationPeriodDays>
 		  <useMeatFrom>Muffalo</useMeatFrom>
 		  <roamMtbDays>5</roamMtbDays>
 		  <litterSizeCurve>
@@ -163,7 +162,7 @@
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-		  <MorrowRim_NetchJelly>10</MorrowRim_NetchJelly>
+		  <MorrowRim_NetchJelly>80</MorrowRim_NetchJelly>
 		</butcherProducts>
 		<tradeTags>
 		  <li>AnimalCommon</li>
@@ -208,8 +207,8 @@
 			  </shadowData>
 			</bodyGraphicData>
 			<femaleGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/Netch</texPath>
-			  <drawSize>1.8</drawSize>
+			  <texPath>MorrowRim/Animals/Netch/NetchBetty</texPath>
+			  <drawSize>1.6</drawSize>
 			  <shadowData>
 				<volume>(0.4, 0.4, 0.4)</volume>
 				<offset>(0,0,-0.2)</offset>
@@ -219,6 +218,10 @@
 			  <texPath>MorrowRim/Animals/Netch/Dessicated_Netch</texPath>
 			  <drawSize>1.9</drawSize>
 			</dessicatedBodyGraphicData>
+			<femaleDessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_NetchBetty</texPath>
+			  <drawSize>1.6</drawSize>
+			</femaleDessicatedBodyGraphicData>
 		  </li>
 		  <li>
 			<bodyGraphicData>
@@ -230,8 +233,8 @@
 			  </shadowData>
 			</bodyGraphicData>
 			<femaleGraphicData>
-			  <texPath>MorrowRim/Animals/Netch/Netch</texPath>
-			  <drawSize>2.4</drawSize>
+			  <texPath>MorrowRim/Animals/Netch/NetchBetty</texPath>
+			  <drawSize>2.2</drawSize>
 			  <shadowData>
 				<volume>(0.4, 0.4, 0.4)</volume>
 				<offset>(0,0,-0.2)</offset>
@@ -241,6 +244,10 @@
 			  <texPath>MorrowRim/Animals/Netch/Dessicated_Netch</texPath>
 			  <drawSize>2.5</drawSize>
 			</dessicatedBodyGraphicData>
+			<femaleDessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_NetchBetty</texPath>
+			  <drawSize>2.2</drawSize>
+			</femaleDessicatedBodyGraphicData>
 		  </li>
 		</lifeStages>
 	</PawnKindDef>
@@ -250,16 +257,15 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MorrowRim_RetchingNetch</defName>
 		<label>retching netch</label>
-
-		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nThis breed of netch has been genetically modified to produce chemfuel. They are called retching netch due to the reaction one has upon inhaling the gas released after death. This smell is likely the result of chemfuel mixing with netch jelly. Comparatively more fragile, shorter lived and much more explosive than their unmodified cousins.\n\nLike many ashland natives netch are resistant to the effects of ash-storms.</description>
+		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nThis breed of netch has been genetically modified to produce chemfuel. They are called retching netch due to the reaction one has upon inhaling the gas released after death. This smell is likely the result of chemfuel mixing with netch jelly. Comparatively more fragile, shorter lived and much more explosive than their unmodified cousins.</description>
 		<statBases>
 		  <ToxicSensitivity>0</ToxicSensitivity>
 		  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 		  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 		  <MoveSpeed>2.7</MoveSpeed>
 		  <MarketValue>350</MarketValue>
-		  <ComfyTemperatureMin>5</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>30</ComfyTemperatureMax>
+		  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 		  <MeatAmount>0</MeatAmount>
 		  <FilthRate>0</FilthRate>
 		</statBases>
@@ -351,8 +357,8 @@
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Chemfuel</milkDef>
-				<milkIntervalDays>2.4</milkIntervalDays>
-				<milkAmount>12</milkAmount>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>18</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
@@ -370,7 +376,7 @@
 		  <leatherDef>MorrowRim_NetchLeather</leatherDef>
 		  <trainability>None</trainability>
 		  <canBePredatorPrey>false</canBePredatorPrey>
-		  <gestationPeriodDays>35</gestationPeriodDays>
+		  <gestationPeriodDays>7</gestationPeriodDays>
 		  <useMeatFrom>Muffalo</useMeatFrom>
 		  <roamMtbDays>5</roamMtbDays>
 		  <litterSizeCurve>
@@ -410,7 +416,8 @@
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<butcherProducts>
-		  <MorrowRim_NetchJelly>10</MorrowRim_NetchJelly>
+		  <MorrowRim_NetchJelly>40</MorrowRim_NetchJelly>
+		  <Chemfuel>20</Chemfuel>
 		</butcherProducts>
 		<tradeTags>
 		  <li>AnimalUncommon</li>

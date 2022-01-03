@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-up! Battle Mounts</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_SiltStrider"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<speedModifier>1.5</speedModifier>
+							<armorModifier>1.2</armorModifier>
+							<useMetalArmor>false</useMetalArmor>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

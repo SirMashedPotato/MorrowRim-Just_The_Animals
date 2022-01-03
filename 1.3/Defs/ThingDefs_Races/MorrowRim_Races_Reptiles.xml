@@ -7,12 +7,12 @@
 		<defName>MorrowRim_Guar</defName>
 		<label>guar</label>
 
-		<description>A large reptile found natively in the ashlands. Like their cousins, the alit and the kagouti, guar are characterised by having a disproportionately large head in comparison to their body. \n\nOften used as pack animals by Dunmer, their minimal intelligence prevents them from being useful in most other ways. Guar may also be farmed for their highly nourishing milk. Outsiders often question how a reptile produces milk, and where it comes from. Those that ask these questions are usally called a "s'wit" or "n'wah".\n\nLike many ashland natives guar are resistant to the effects of ash-storms.</description>
+		<description>A large reptile found natively in the ashlands. Like their cousins, the alit and the kagouti, guar are characterised by having a disproportionately large head in comparison to their body. \n\nOften used as pack animals by Dunmer, their minimal intelligence prevents them from being useful in most other ways. Guar may also be farmed for their highly nourishing milk. Outsiders often question how a reptile produces milk, and where it comes from. Those that ask these questions are usally called a "s'wit" or "n'wah".</description>
 		<statBases>
 		  <MoveSpeed>4.5</MoveSpeed>
 		  <MarketValue>300</MarketValue>
 		  <ComfyTemperatureMin>10</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <FilthRate>14</FilthRate>
 		  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
 		</statBases>
@@ -189,13 +189,14 @@
 		<defName>MorrowRim_AlbinoGuar</defName>
 		<label>albino guar</label>
 
-		<description>A guar that carries a rare mutation that has resulted in a snow-white colouration. Sadly this mutation has also caused complete sterility. These albino guar are often sought after by collectors and are considered a good omen by ashlanders.\n\nLike many ashland natives guar are resistant to the effects of ash-storms.</description>
+		<description>A guar that carries a rare mutation that has resulted in a snow-white colouration. Sadly this mutation has also caused complete sterility. These albino guar are often sought after by collectors and are considered a good omen by ashlanders.</description>
 		<statBases>
 		  <MoveSpeed>4.5</MoveSpeed>
 		  <MarketValue>2000</MarketValue>
 		  <ComfyTemperatureMin>10</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <FilthRate>14</FilthRate>
+		  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
@@ -350,12 +351,12 @@
 		<defName>MorrowRim_Alit</defName>
 		<label>alit</label>
 
-		<description>A large carnivorous reptile found natively in the ashlands. The alit lacks arms entirely, giving it the appearance of a chicken with an alligators head. This often leads to ill-prepared outlanders laughing at a charging alit, instead of running away. These outlanders quickly end up inside of said alit's stomach. Alit have a frighteningly powerful bite, capable of crushing bone with ease.\n\nAlit are rather stupid, and effectively blind. Because of this they can be tamed for use as guard dogs, but not much else.\n\nLike many ashland natives alit are resistant to the effects of ash-storms.</description>
+		<description>A large carnivorous reptile found natively in the ashlands. The alit lacks arms entirely, giving it the appearance of a chicken with an alligators head. This often leads to ill-prepared outlanders laughing at a charging alit, instead of running away. These outlanders quickly end up inside of said alit's stomach. Alit have a frighteningly powerful bite, capable of crushing bone with ease.\n\nAlit are rather stupid, and effectively blind. Because of this they can be tamed for use as guard dogs, but not much else.</description>
 		<statBases>
 		  <MoveSpeed>4.6</MoveSpeed>
 		  <MarketValue>700</MarketValue>
 		  <ComfyTemperatureMin>10</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <FilthRate>4</FilthRate>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
@@ -512,12 +513,12 @@
 		<defName>MorrowRim_Kagouti</defName>
 		<label>kagouti</label>
 
-		<description>A large omnivorous reptile found natively in the ashlands. Larger and more dangerous that their cousin, the alit. kagouti have a much weaker bite, instead they rely on two tusks either side of their mouth, which they often use to gore both prey and aggressors alike. Of course these tusks also have other uses, such as digging for tubers and water, or as a sign of fitness during the mating season.\n\nKagouti can be tamed for use as guard dogs, but are of little use for anything else. This is not because kagouti are stupid, but because they are very stubborn.\n\nLike many ashland natives kagouti are resistant to the effects of ash-storms.</description>
+		<description>A large omnivorous reptile found natively in the ashlands. Larger and more dangerous that their cousin, the alit. kagouti have a much weaker bite, instead they rely on two tusks either side of their mouth, which they often use to gore both prey and aggressors alike. Of course these tusks also have other uses, such as digging for tubers and water, or as a sign of fitness during the mating season.\n\nKagouti can be tamed for use as guard dogs, but are of little use for anything else. This is not because kagouti are stupid, but because they are very stubborn.</description>
 		<statBases>
 		  <MoveSpeed>4.7</MoveSpeed>
 		  <MarketValue>750</MarketValue>
 		  <ComfyTemperatureMin>10</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <FilthRate>5</FilthRate>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
@@ -686,7 +687,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MorrowRim_Durzog</defName>
 		<label>durzog</label>
-		<description>A large reptilian found natively in the ashlands. Often referred to as 'sludgepuppies' due to their love of bathing in both mud and raw sewage. Durzog are domesticated for use as war mounts or guard dogs, though they are not the most durable creatures.\n\nLike many ashland natives durzog are resistant to the effects of ash-storms.</description>
+		<description>A large reptilian found natively in the ashlands. Often referred to as 'sludgepuppies' due to their love of bathing in both mud and raw sewage. Durzog are domesticated for use as war mounts or guard dogs, though they are not the most durable creatures.</description>
 
 		<statBases>
 		  <ToxicSensitivity>0.6</ToxicSensitivity>
@@ -694,7 +695,7 @@
 		  <MarketValue>300</MarketValue>
 		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
-		  <FilthRate>7</FilthRate>
+		  <FilthRate>3</FilthRate>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -843,12 +844,12 @@
 		<defName>MorrowRim_CliffRacer</defName>
 		<label>cliff racer</label>
 
-		<description>A highly agressive flying reptile found natively in the ashlands. Their appearance may make one consider them to be of little threat, this could not be less true. There are stories of endless swarms of cliff racers driving, much larger, dragon-like creatures out of the ashlands.\n\nCliff racers have an almost unnaturally fast breeding cycle, and are able to breed asexually. If a cliff racer population becomes established in an area it will likely drive all other animals away. As such, cliff racers are best dealt with quickly.\n\nLike many ashland natives cliff racers are resistant to the effects of ash-storms.</description>
+		<description>A highly agressive flying reptile found natively in the ashlands. Their appearance may make one consider them to be of little threat, this could not be less true. There are stories of endless swarms of cliff racers driving, much larger, dragon-like creatures out of the ashlands.\n\nCliff racers have an almost unnaturally fast breeding cycle, and are able to breed asexually. If a cliff racer population becomes established in an area it will likely drive all other animals away. As such, cliff racers are best dealt with quickly.</description>
 		<statBases>
 		  <MoveSpeed>6.0</MoveSpeed>
 		  <MarketValue>350</MarketValue>
 		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <FilthRate>0</FilthRate>
 		</statBases>
 		<tools>
@@ -915,7 +916,7 @@
 		  <leatherDef>MorrowRim_CliffRacerLeather</leatherDef>
 		  <nameOnTameChance>1</nameOnTameChance>
 		  <trainability>Intermediate</trainability>
-		  <wildness>1</wildness>
+		  <wildness>0.95</wildness>
 		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 		  <manhunterOnDamageChance>1</manhunterOnDamageChance>
 		  <lifeExpectancy>8</lifeExpectancy>
@@ -1004,14 +1005,14 @@
 		<defName>MorrowRim_TigerGuar</defName>
 		<label>tiger guar</label>
 
-		<description>A larger, faster, more intelligent, and more dangerous breed of guar, named after its stripes. Tiger guar are considered to be rather rare, but may sometimes be found roaming the ashlands in small packs.\n\nLike many ashland natives tiger guar are resistant to the effects of ash-storms.</description>
+		<description>A larger, faster, more intelligent, and more dangerous breed of guar, named after its stripes. Tiger guar are considered to be rather rare, but may sometimes be found roaming the ashlands in small packs.</description>
 		<statBases>
 		  <MoveSpeed>4.7</MoveSpeed>
 		  <MarketValue>400</MarketValue>
 		  <ComfyTemperatureMin>10</ComfyTemperatureMin>
 		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <FilthRate>4</FilthRate>
-		  <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+		  <CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
 		</statBases>
 		<uiIconScale>1.35</uiIconScale>
 		<tools>
@@ -1190,7 +1191,7 @@
 		<defName>MorrowRim_BantamGuar</defName>
 		<label>bantam guar</label>
 
-		<description>A guar, if a guar was more like a chicken, that isn't actually a guar, and is more closely related to the scuttler. Why this creature is named as such is known only to the oldest members of Great House Telvanni.\n\nMuch like its more ordinary counterpart, the chicken, the bantam guar is farmed for its eggs. While it is somewhat slower at producing eggs than even geese, it has adapted to life in the ashlands, and is thus resistant to the effects of ash storms. There is also the added bonus that bantam guar sometimes produce a second egg.\n\nLike many ashland natives, bantam guar are resistant to the effects of ash-storms.</description>
+		<description>A guar, if a guar was more like a chicken, that isn't actually a guar, and is more closely related to the scuttler. Why this creature is named as such is known only to the oldest members of Great House Telvanni.\n\nMuch like its more ordinary counterpart, the chicken, the bantam guar is farmed for its eggs. While it is somewhat slower at producing eggs than even geese, it has adapted to life in the ashlands, and is thus resistant to the effects of ash storms. There is also the added bonus that bantam guar sometimes produce a second egg.</description>
 		<statBases>
 		  <MoveSpeed>2.1</MoveSpeed>
 		  <MarketValue>50</MarketValue>
@@ -1239,8 +1240,8 @@
 		<race>
 		  <herdAnimal>true</herdAnimal>
 		  <body>MorrowRim_Bipedal</body>
-		  <baseHungerRate>0.35</baseHungerRate>
-		  <baseBodySize>0.18</baseBodySize>
+		  <baseHungerRate>0.14</baseHungerRate>
+		  <baseBodySize>0.3</baseBodySize>
 		  <baseHealthScale>0.45</baseHealthScale>
 		  <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
 		  <leatherDef>Leather_Lizard</leatherDef>
@@ -1337,18 +1338,18 @@
 		</lifeStages>
 	  </PawnKindDef>
 	  
-	  <!-- Wormmouth -->
+	<!-- Wormmouth -->
 	  
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MorrowRim_Wormmouth</defName>
 		<label>wormmouth</label>
 
-		<description>A large carnivorous reptile, closely related to the guar, alit and kagouti. While the wormmouth can be found in the ashlands, it is actually an invasive species originally introduced by the Telvanni. It is named after the shape of its toungue, which looks, and even moves, like a worm.\n\nWhile not the most dangerous beast, its body is covered in heavy plating, protecting it from weaker blows. One should also avoid its saliva, which is highly acidic. The wormmouth eats prey whole, using its saliva to liquify it, before swallowing. Interestingly the wormmouth still has teeth.\n\nDue to being highly adaptable, the wormmouth is resistant to the effects of ash storms.</description>
+		<description>A large carnivorous reptile, closely related to the guar, alit and kagouti. While the wormmouth can be found in the ashlands, it is actually an invasive species originally introduced by the Telvanni. It is named after the shape of its toungue, which looks, and even moves, like a worm.\n\nWhile not the most dangerous beast, its body is covered in heavy plating, protecting it from weaker blows. One should also avoid its saliva, which is highly acidic. The wormmouth eats prey whole, using its saliva to liquify it, before swallowing. Interestingly the wormmouth still has teeth.</description>
 		<statBases>
 		  <MoveSpeed>4.0</MoveSpeed>
 		  <MarketValue>680</MarketValue>
 		  <ComfyTemperatureMin>5</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 		  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 		  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 		  <FilthRate>4</FilthRate>
@@ -1526,7 +1527,7 @@
 		<defName>MorrowRim_Scuttler</defName>
 		<label>scuttler</label>
 
-		<description>A small reptile, strangely enough most closely related to the cliff racer and the bantam guar. It can be found in the ashlands, or occasionally in Dunmer households as a pet.\n\nWhile generally peaceful, the scuttler is actually a voracious predator, of tiny insects. It will often end up devouring raw plant matter in its search for tasty multi-legged morsels..\n\nLike many ashland natives, scuttler are resistant to the effects of ash-storms.</description>
+		<description>A small reptile, strangely enough most closely related to the cliff racer and the bantam guar. It can be found in the ashlands, or occasionally in Dunmer households as a pet.\n\nWhile generally peaceful, the scuttler is actually a voracious predator, of tiny insects. It will often end up devouring raw plant matter in its search for tasty multi-legged morsels.</description>
 		<statBases>
 		  <MoveSpeed>2.1</MoveSpeed>
 		  <MarketValue>50</MarketValue>
@@ -1585,6 +1586,7 @@
 		  <trainability>None</trainability>
 		  <mateMtbHours>8</mateMtbHours>
 		  <lifeExpectancy>10</lifeExpectancy>
+		  <nuzzleMtbHours>18</nuzzleMtbHours>
 		  <lifeStageAges>
 			<li>
 			  <def>AnimalBabyTiny</def>
