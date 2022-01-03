@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Scrib -->
+	
+	<ThingDef ParentName="BaseInsect">
+		<defName>MorrowRim_KwamaScrib</defName>
+		<label>kwama scrib</label>
+		<description>Kwama are large insectoids that make their nests in caves in the ashlands. Kwama, like ants, form large colonies, with each caste having its own role in the colony. They are relatviely docile, atleast until the nest is threatened. Becuase of this their nests are often 'mined' by Dunmer for their eggs.\n\nScrib are the larval form of kwama. As such they are mostly encountered in kwama nests, but can also be found wandering the ashlands. Relatively peaceful and not very dangerous, though their bites are capable of inflicting paralysis.\n\nLike many ashland natives scrib are resistant to the effects of ash-storms.</description>
+		<statBases>
+		  <MoveSpeed>3.75</MoveSpeed>
+		  <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+		  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+		  <MarketValue>100</MarketValue>
+		  <!--<MeatAmount>0</MeatAmount>-->
+		  <LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<tools>
+		  <li>
+			<label>mandibles</label>
+			<capacities>
+			  <li>MorrowRim_ParalyticBite</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.1</chanceFactor>
+		  </li>
+		</tools>
+		<race>
+		  <body>MorrowRim_KwamaScrib</body>
+		  <baseBodySize>0.2</baseBodySize>
+		  <baseHungerRate>0.10</baseHungerRate>
+		  <baseHealthScale>0.2</baseHealthScale>
+		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <wildness>0.80</wildness>
+		  <lifeExpectancy>4</lifeExpectancy>
+		  <manhunterOnDamageChance>0</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+		  <trainability>Intermediate</trainability>
+		  <lifeStageAges>
+			<li>
+			  <def>EusocialInsectLarva</def>
+			  <minAge>0</minAge>
+			  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+			  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+			  <soundCall>Pawn_Megascarab_Call</soundCall>
+			  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<!--<butcherProducts>
+		  <MorrowRim_ScribJelly>4</MorrowRim_ScribJelly>
+		</butcherProducts>-->
+		<tradeTags>
+		  <li>AnimalInsect</li>
+		  <li>AshlandAnimalCommon</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_KwamaScrib</defName>
+		<label>kwama scrib</label>
+		<race>MorrowRim_KwamaScrib</race>
+		<defaultFactionType>MorrowRim_Kwama</defaultFactionType>
+		<combatPower>40</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Scrib/Scrib</texPath>
+			  <drawSize>0.9</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Scrib/Dessicated_Scrib</texPath>
+			  <drawSize>0.9</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Forager -->
+	
+	<ThingDef ParentName="BaseInsect">
+		<defName>MorrowRim_KwamaForager</defName>
+		<label>kwama forager</label>
+		<description>Kwama are large insectoids that make their nests in caves in the ashlands. Kwama, like ants, form large colonies, with each caste having its own role in the colony. They are relatviely docile, atleast until the nest is threatened. Becuase of this their nests are often 'mined' by Dunmer for their eggs.\n\nKwama foragers are often found wandering the ashlands in search of food to bring back to the nest. Kwama foragers have a toxic bite instead of the paralytic bite of the juvenile scrib.\n\nLike many ashland natives foragers are resistant to the effects of ash-storms.</description>
+		<statBases>
+		  <MoveSpeed>1.5</MoveSpeed>
+		  <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+		  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+		  <MarketValue>100</MarketValue>
+		  <LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<tools>
+		  <li>
+			<label>mandibles</label>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.1</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+		</comps>
+		<race>
+		  <body>MorrowRim_KwamaLeechLike</body>
+		  <baseBodySize>0.2</baseBodySize>
+		  <baseHungerRate>0.10</baseHungerRate>
+		  <baseHealthScale>0.4</baseHealthScale>
+		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <wildness>0.95</wildness>
+		  <lifeExpectancy>7</lifeExpectancy>
+		  <manhunterOnDamageChance>0</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+		  <trainability>None</trainability>
+		  <lifeStageAges>
+			<li>
+			  <def>EusocialInsectJuvenile</def>
+			  <minAge>0.0</minAge>
+			</li>
+			<li>
+			  <def>EusocialInsectAdult</def>
+			  <minAge>0.4</minAge>
+			  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+			  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+			  <soundCall>Pawn_Megascarab_Call</soundCall>
+			  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_KwamaForager</defName>
+		<label>kwama forager</label>
+		<race>MorrowRim_KwamaForager</race>
+		<defaultFactionType>MorrowRim_Kwama</defaultFactionType>
+		<combatPower>40</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Forager/Forager</texPath>
+			  <drawSize>0.85</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Forager/Dessicated_Forager</texPath>
+			  <drawSize>0.85</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Forager/Forager</texPath>
+			  <drawSize>1.0</drawSize>
+			  <shadowData>
+				<volume>(0.2, 0.3, 0.2)</volume>
+				<offset>(0,0,0)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Forager/Dessicated_Forager</texPath>
+			  <drawSize>1.0</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+  
+	<!-- Worker -->
+	
+	<ThingDef ParentName="BaseInsect">
+		<defName>MorrowRim_KwamaWorker</defName>
+		<label>kwama worker</label>
+		<description>Kwama are large insectoids that make their nests in caves in the ashlands. Kwama, like ants, form large colonies, with each caste having its own role in the colony. They are relatviely docile, atleast until the nest is threatened. Becuase of this their nests are often 'mined' by Dunmer for their eggs.\n\nThe sole purpose of kwama workers is to dig tunnels, expanding the nest, and tending to the queen and her eggs. Their appearance, in contrast to that of the kwama forager, has raised the question of whether kwama workers are actually a sperate species of insectoid, living symbiotically with kwama.\n\nLike many ashland natives workers are resistant to the effects of ash-storms.</description>
+		<statBases>
+		  <MoveSpeed>4.6</MoveSpeed>
+		  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+		  <MarketValue>200</MarketValue>
+		  <LeatherAmount>0</LeatherAmount>
+		  <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<tools>
+		  <li>
+			<label>left claws</label>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>0.5</chanceFactor>
+		  </li>
+		  <li>
+			<label>right claws</label>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>0.5</chanceFactor>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>6</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		</tools>
+		<race>
+		  <body>MorrowRim_QuadrupedalInsect</body>
+		  <baseHungerRate>0.25</baseHungerRate>
+		  <baseBodySize>1.0</baseBodySize>
+		  <baseHealthScale>1.7</baseHealthScale>
+		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <wildness>0.95</wildness>
+		  <lifeExpectancy>6</lifeExpectancy>
+		  <manhunterOnDamageChance>0</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+		  <trainability>None</trainability>
+		  <lifeStageAges>
+			<li>
+			  <def>EusocialInsectJuvenile</def>
+			  <minAge>0.0</minAge>
+			</li>
+			<li>
+			  <def>EusocialInsectAdult</def>
+			  <minAge>0.2</minAge>
+			  <soundWounded>Pawn_Spelopede_Pain</soundWounded>
+			  <soundDeath>Pawn_Spelopede_Death</soundDeath>
+			  <soundCall>Pawn_Spelopede_Call</soundCall>
+			  <soundAngry>Pawn_Spelopede_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalInsect</li>
+		</tradeTags>
+	  </ThingDef>
+
+	  <PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_KwamaWorker</defName>
+		<label>kwama worker</label>
+		<race>MorrowRim_KwamaWorker</race>
+		<defaultFactionType>MorrowRim_Kwama</defaultFactionType>
+		<combatPower>75</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.35</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Worker/Worker</texPath>
+			  <drawSize>1.8</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Worker/Dessicated_Worker</texPath>
+			  <drawSize>1.8</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Worker/Worker</texPath>
+			  <drawSize>2.5</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.5, 0.37)</volume>
+				<offset>(0,0,-0.15)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Worker/Dessicated_Worker</texPath>
+			  <drawSize>2.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Warrior -->
+	
+	<ThingDef ParentName="BaseInsect">
+		<defName>MorrowRim_KwamaWarrior</defName>
+		<label>kwama warrior</label>
+		<description>Kwama are large insectoids that make their nests in caves in the ashlands. Kwama, like ants, form large colonies, with each caste having its own role in the colony. They are relatviely docile, atleast until the nest is threatened. Becuase of this their nests are often 'mined' by Dunmer for their eggs.\n\nKwama warriors are the defenders of the nest, and significantly more dangerous than the others castes. Their chitin plating has hardened, drastically increasing durability at the cost of speed. They also have a toxic bite. Their physical appearance suggests that the kwama warrior is actually two seperate organisms. A kwama forager acting as the mind, and a kwama worker acting as the body.\n\nLike many ashland natives warriors are resistant to the effects of ash-storms.</description>
+		<statBases>
+		  <MoveSpeed>1.5</MoveSpeed>
+		  <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+		  <MarketValue>500</MarketValue>
+		  <LeatherAmount>0</LeatherAmount>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+		</statBases>
+		<uiIconScale>1.15</uiIconScale>
+		<tools>
+		  <li>
+			<label>mouth</label>
+			<capacities>
+			  <li>ToxicBite</li>
+			</capacities>
+			<power>20</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			<chanceFactor>0.9</chanceFactor>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>right arm claws</label>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>0.5</chanceFactor>
+		  </li>
+		  <li>
+			<label>left arm claws</label>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>0.5</chanceFactor>
+		  </li>
+		</tools>
+		<race>
+		  <body>MorrowRim_KwamaWarrior</body>
+		  <baseHungerRate>0.35</baseHungerRate>
+		  <baseBodySize>1.2</baseBodySize>
+		  <baseHealthScale>3.4</baseHealthScale>
+		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <wildness>0.95</wildness>
+		  <lifeExpectancy>8</lifeExpectancy>
+		  
+		  <trainability>None</trainability>
+		  <lifeStageAges>
+			<li>
+			  <def>EusocialInsectJuvenile</def>
+			  <minAge>0.0</minAge>
+			</li>
+			<li>
+			  <def>EusocialInsectAdult</def>
+			  <minAge>0.2</minAge>
+			  <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+			  <soundDeath>Pawn_BigInsect_Death</soundDeath>
+			  <soundCall>Pawn_BigInsect_Call</soundCall>
+			  <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_KwamaWarrior</defName>
+		<label>kwama warrior</label>
+		<race>MorrowRim_KwamaWarrior</race>
+		<defaultFactionType>MorrowRim_Kwama</defaultFactionType>
+		<combatPower>150</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Warrior/Warrior</texPath>
+			  <drawSize>1.6</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Warrior/Dessicated_Warrior</texPath>
+			  <drawSize>1.6</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Warrior/Warrior</texPath>
+			  <drawSize>2.5</drawSize>
+			  <shadowData>
+				<volume>(0.5, 0.7, 0.43)</volume>
+				<offset>(0,0,-0.1)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Kwama/Warrior/Dessicated_Warrior</texPath>
+			  <drawSize>2.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+  
+</Defs>

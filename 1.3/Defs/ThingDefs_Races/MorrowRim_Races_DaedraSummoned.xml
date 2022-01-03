@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Ogrim -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_OgrimSmol</defName>
+		<label>ogrim</label>
+
+		<description>Ogrim are terrifying beasts, able to smash down even the strongest of walls with ease. Blows to their tough hide simply bounce off, not even leaving a bruise. They tower above all who dare face them, and those that are stupid enough to quickly realise their mistake.\n\nThis particular ogrim is... slightly underwhelming.\n\nDue to their daedric origin ogrim are resistant to the effects of ash-storms.</description>
+		<statBases>
+		  <MoveSpeed>2.0</MoveSpeed>
+		  <MarketValue>750</MarketValue>
+		  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+		  <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>55</ComfyTemperatureMax>
+		  <FilthRate>3</FilthRate>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2.6</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		  </li>
+		  <li>
+			<label>left hand</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>1.0</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>7</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>right hand</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>1.0</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>7</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_OgrimFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>40</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="MorrowRim_Orsimir.CompProperties_BeserkerRage">
+				<hediffDef>MorrowRim_TitanMode</hediffDef>
+				<enableAugments>false</enableAugments>
+				<enableTracker>false</enableTracker>
+			  </li>
+		</comps>
+		<race>
+		  <herdMigrationAllowed>false</herdMigrationAllowed>
+		  <predator>true</predator>
+		  <maxPreyBodySize>4.1</maxPreyBodySize>
+		  <body>MorrowRim_Daedra</body>
+		  <baseBodySize>0.4</baseBodySize>
+		  <baseHealthScale>6</baseHealthScale>
+		  <baseHungerRate>0.85</baseHungerRate>
+		  <foodType>CarnivoreAnimal</foodType>
+		  <leatherDef>MorrowRim_DaedraHide</leatherDef>
+		  <wildness>0.90</wildness>
+		  <trainability>None</trainability>
+		  <lifeExpectancy>65</lifeExpectancy>
+		  <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+		  <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+		  <useMeatFrom>MorrowRim_Clannfear</useMeatFrom>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.65</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>1</minAge>
+			  <soundWounded>Pawn_Bison_Wounded</soundWounded>
+			  <soundDeath>Pawn_Bison_Death</soundDeath>
+			  <soundCall>Pawn_Bison_Call</soundCall>
+			  <soundAngry>Pawn_Bison_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef Name="MorrowRim_OgrimSmol" ParentName="AnimalKindBase">
+		<defName>MorrowRim_OgrimSmol</defName>
+		<label>ogrim</label>
+		<race>MorrowRim_OgrimSmol</race>
+		<combatPower>150</combatPower>
+		<ecoSystemWeight>1.0</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<aiAvoidCover>false</aiAvoidCover>
+		<lifeStages>
+		  <li>
+			<label>ogrim spawn</label>
+			<labelPlural>ogrim spawn</labelPlural>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Ogrim/Ogrim</texPath>
+			  <drawSize>0.4</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Ogrim/Dessicated_Ogrim</texPath>
+			  <drawSize>0.4</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Ogrim/Ogrim</texPath>
+			  <drawSize>0.6</drawSize>
+			  <shadowData>
+				<volume>(0.6, 0.45, 0.45)</volume>
+				<offset>(0,0,-0.25)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Ogrim/Dessicated_Ogrim</texPath>
+			  <drawSize>0.6</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Ogrim/Ogrim</texPath>
+			  <drawSize>0.8</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Ogrim/Dessicated_Ogrim</texPath>
+			  <drawSize>0.8</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
+

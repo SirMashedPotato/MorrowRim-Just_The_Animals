@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Vanilla Biomes</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- ZBiome_CloudForest -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_Netch>0.4</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.4</MorrowRim_RetchingNetch>
+						<MorrowRim_NixHound>0.1</MorrowRim_NixHound>
+						<MorrowRim_Wormmouth>0.1</MorrowRim_Wormmouth>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+					</value>			
+				</li>	
+
+				<!-- ZBiome_CoastalDunes -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_CoastalDunes"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Alit>0.1</MorrowRim_Alit>
+						<MorrowRim_CliffRacer>0.2</MorrowRim_CliffRacer>
+						<MorrowRim_Netch>0.6</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.5</MorrowRim_RetchingNetch>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+
+				<!-- ZBiome_DesertOasis -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_DesertOasis"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.05</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.05</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.5</MorrowRim_Guar>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_DesertOasis"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+						<li>MorrowRim_SiltStrider</li>
+					</value>			
+				</li>	
+
+				<!-- ZBiome_Grasslands -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_Grasslands"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Alit>0.05</MorrowRim_Alit>
+						<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.05</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.05</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_NixHound>0.05</MorrowRim_NixHound>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_Shalk>0.9</MorrowRim_Shalk>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_Grasslands"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+						<li>MorrowRim_SiltStrider</li>
+					</value>			
+				</li>
+
+				<!-- ZBiome_Marsh -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_Netch>0.5</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.4</MorrowRim_RetchingNetch>
+						<MorrowRim_NixHound>0.06</MorrowRim_NixHound>
+						<MorrowRim_Wormmouth>0.06</MorrowRim_Wormmouth>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_FungalShalk>0.5</MorrowRim_FungalShalk>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+					</value>			
+				</li>
+
+				<!-- ZBiome_Sandbar_NoBeach -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_Sandbar_NoBeach"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
+						<MorrowRim_Netch>0.6</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.5</MorrowRim_RetchingNetch>
+					</value>			
+				</li>	
+
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

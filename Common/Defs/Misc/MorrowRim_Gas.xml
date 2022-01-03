@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseGas">
+    <defName>Gas_RetchingNetch</defName>
+	<thingClass>MorrowRim.Gas_RetchingNetch</thingClass>
+    <label>retching netch gas</label>
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>2.2</drawSize>
+      <!--<color>(1.0,1.0,1.0,0.5)</color>-->
+	  <color>(79,173,145,50)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>10~16</expireSeconds>
+      <blockTurretTracking>true</blockTurretTracking>
+      <accuracyPenalty>0.7</accuracyPenalty>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+  </ThingDef>
+
+</Defs>

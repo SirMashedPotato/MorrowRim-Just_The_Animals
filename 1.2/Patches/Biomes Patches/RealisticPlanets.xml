@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Realistic Planets</li>
+			<li>Realistic Planets - Fan Update</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- RRP_Grassland -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Grassland"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Alit>0.05</MorrowRim_Alit>
+						<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.05</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.05</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_NixHound>0.05</MorrowRim_NixHound>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_Shalk>0.9</MorrowRim_Shalk>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Grassland"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+						<li>MorrowRim_SiltStrider</li>
+					</value>			
+				</li>
+				
+				<!-- RRP_Savanna -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Savanna"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Alit>0.07</MorrowRim_Alit>
+						<MorrowRim_CliffRacer>0.15</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.07</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.07</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_NixHound>0.05</MorrowRim_NixHound>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_Shalk>0.9</MorrowRim_Shalk>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Savanna"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+						<li>MorrowRim_SiltStrider</li>
+					</value>			
+				</li>
+				
+				<!-- RRP_Steppes -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Steppes"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Alit>0.07</MorrowRim_Alit>
+						<MorrowRim_CliffRacer>0.15</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.07</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.07</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_NixHound>0.05</MorrowRim_NixHound>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_Shalk>0.9</MorrowRim_Shalk>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Steppes"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+						<li>MorrowRim_SiltStrider</li>
+					</value>			
+				</li>
+				
+				<!-- RRP_TemperateDesert -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_TemperateDesert"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Alit>0.07</MorrowRim_Alit>
+						<MorrowRim_CliffRacer>0.15</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.07</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.07</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_Shalk>0.9</MorrowRim_Shalk>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_TemperateDesert"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+						<li>MorrowRim_SiltStrider</li>
+					</value>			
+				</li>
+
+				<!-- RRP_Oasis -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Oasis"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.05</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.05</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.5</MorrowRim_Guar>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="RRP_Oasis"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+						<li>MorrowRim_SiltStrider</li>
+					</value>			
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

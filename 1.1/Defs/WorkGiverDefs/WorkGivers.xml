@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>MorrowRim_HarvestAnimalGrowth</defName>
+		<label>harvest animal growth</label>
+		<giverClass>MorrowRim.WorkGiver_HarvestableAnimal</giverClass>
+		<workType>Handling</workType>
+		<verb>harvest growth from</verb>
+		<gerund>harvesting growth from</gerund>
+		<priorityInType>85</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+    </WorkGiverDef>
+	
+</Defs>

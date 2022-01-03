@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Islands: Extra Islands</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- BiomesIslands_temperateIsland -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_temperateIsland"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.06</MorrowRim_CliffRacer>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_Netch>0.4</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.2</MorrowRim_RetchingNetch>
+						<MorrowRim_NixHound>0.06</MorrowRim_NixHound>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="BiomesIslands_temperateIsland"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+					</value>			
+				</li>	
+
+			
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+

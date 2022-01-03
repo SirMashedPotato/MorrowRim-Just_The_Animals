@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>MorrowRim_Apparel_DaedraSummoningStone</defName>
+		<label>daedra summoning stone</label>
+		<description>A single use stone of unknown origin. Activating the stone uses the lifeforce of the target to momentarily tear a rift between worlds, forcing a daedra to emerge, and enslaving its mind in the process.\n\nDue to the nature of this process, the daedra that emerges is simply the closest one to the tear.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Artifact/DaedraSummoningStone</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeTags>
+		  <li>Artifact</li>
+		  <li>AshlandExotic</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+		  <Mass>0.5</Mass>
+		  <EquipDelay>2</EquipDelay>
+		  <MarketValue>650</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+		  <li>ApparelUtility</li>
+		</thingCategories>
+		<apparel>
+		  <scoreOffset>4</scoreOffset>
+		  <careIfWornByCorpse>false</careIfWornByCorpse>
+		  <careIfDamaged>false</careIfDamaged>
+		  <wearPerDay>0</wearPerDay>
+		  <bodyPartGroups>
+			<li>Waist</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Belt</li>
+		  </layers>
+		</apparel>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<verbs>
+		  <li>
+			<verbClass>Verb_CastTargetEffect</verbClass>
+			<label>daedra summoning stone</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetable>true</targetable>
+			<onlyManualCast>True</onlyManualCast>
+			<range>34.9</range>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+			  <canTargetBuildings>false</canTargetBuildings>
+			  <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+			  <neverTargetIncapacitated>true</neverTargetIncapacitated>
+			  <canTargetAnimals>false</canTargetAnimals>
+			  <canTargetHumans>true</canTargetHumans>
+			  <canTargetMechs>false</canTargetMechs>
+			</targetParams>
+			<soundCast>PsychicInsanityLanceCast</soundCast>
+		  </li>
+		</verbs>
+		<comps>
+		  <li Class="CompProperties_Reloadable">
+			<maxCharges>1</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>summon</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		  </li>
+		  
+		  <li Class="CompProperties_TargetEffect_MoteOnTarget">
+			<moteDef>Mote_PsycastPsychicEffect</moteDef>
+		  </li>
+		  <li Class="CompProperties_TargetEffect_MoteConnecting">
+			<moteDef>Mote_PsycastPsychicLine</moteDef>
+		  </li>
+		  
+		  <li>
+			<compClass>MorrowRim.CompTargetEffect_DaedraSummon</compClass>
+		  </li>
+		  <li Class="CompProperties_TargetEffect_GoodwillImpact">
+			<goodwillImpact>-400</goodwillImpact>
+		  </li>
+		</comps>
+	</ThingDef>
+
+</Defs>

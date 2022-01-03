@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Eggs -->
+	
+	<!-- Guar -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_GuarFertilized</defName>
+		<label>guar egg (fert.)</label>
+		<description>A fertilized guar egg. If all goes well, it should hatch into a guar calf. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,124,109)</color>
+		  <drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>7</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Guar</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Silt-strider -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_SiltStriderFertilized</defName>
+		<label>silt strider egg (fert.)</label>
+		<description>A fertilized silt strider egg. If all goes well, it should hatch into a silt strider nymph. It can be eaten raw, but it's much better cooked.\n\nExpensive due to the rarity of silt striders. Considered a delicacy amongst the wealthy.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_StriderEgg</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1</drawSize>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<statBases>
+		  <MarketValue>100.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>30</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_SiltStrider</hatcherPawn>
+		  </li>
+		</comps>
+		<thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Nix-hound -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_NixHoundFertilized</defName>
+		<label>nix-hound egg (fert.)</label>
+		<description>A fertilized nix-hound egg. If all goes well, it should hatch into a nix-hound pup. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_InsectEgg</texPath>
+		  <color>(108,94,79)</color>
+		  <drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>16.0</MarketValue>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>7</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_NixHound</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<!-- Alit -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_AlitFertilized</defName>
+		<label>alit egg (fert.)</label>
+		<description>A fertilized alit egg. If all goes well, it should hatch into an alit whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,124,109)</color>
+		  <drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>10</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Alit</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Kagouti -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_KagoutiFertilized</defName>
+		<label>kagouti egg (fert.)</label>
+		<description>A fertilized kagouti egg. If all goes well, it should hatch into a kagouti whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,124,109)</color>
+		  <drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>21.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>10</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Kagouti</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+
+	
+	<!-- Shalk -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_ShalkFertilized</defName>
+		<label>shalk egg (fert.)</label>
+		<description>A fertilized shalk egg. If all goes well, it should hatch into a baby shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_InsectEgg</texPath>
+		  <color>(109,111,109)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>11</MarketValue>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>4</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Shalk</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+
+	<!-- Durzog -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_DurzogFertilized</defName>
+		<label>durzog egg (fert.)</label>
+		<description>A fertilized durzog egg. If all goes well, it should hatch into a durzog pup. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,124,109)</color>
+		  <drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>7</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Durzog</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Cliff racer -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_CliffRacerFertilized</defName>
+		<label>cliff racer egg (fert.)</label>
+		<description>A fertilized cliff racer egg. If all goes well, it should hatch into a cliff racer spawn. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+		  <color>(109,111,109)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>15</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>1</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_CliffRacer</hatcherPawn>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Netch -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_NetchFertilized</defName>
+		<label>netch egg (fert.)</label>
+		<description>A fertilized netch egg. If all goes well, it should hatch into a netch calf. It can be eaten raw, but it's much better cooked.\n\nExpensive due to netch being highly protective of their eggs.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_JellyEgg</texPath>
+		  <color>(172,110,193)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>3</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Netch</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Retching Netch -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_RetchingNetchFertilized</defName>
+		<label>retching netch egg (fert.)</label>
+		<description>A fertilized retching netch egg. If all goes well, it should hatch into a retching netch calf. It can be eaten raw, but it's much better cooked.\n\nExpensive due to netch being highly protective of their eggs.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_JellyEgg</texPath>
+		  <color>(110,172,193)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>45</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>3</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_RetchingNetch</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Ash hopper -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_AshHopperFertilized</defName>
+		<label>ash hopper egg (fert.)</label>
+		<description>A fertilized ash hopper egg. If all goes well, it should hatch into an ash hopper nymph. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_InsectEgg</texPath>
+		  <color>(111,111,109)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>11</MarketValue>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>4</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_AshHopper</hatcherPawn>
+		  </li>
+		</comps>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<!-- Clannfear -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_ClannfearFertilized</defName>
+		<label>clannfear egg (fert.)</label>
+		<description>A fertilized clannfear egg. If all goes well, it should hatch into a baby clannfear. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		  <color>(138,138,138)</color>
+		  <drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>26.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>14</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Clannfear</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Daedroth -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_DaedrothFertilized</defName>
+		<label>daedroth egg (fert.)</label>
+		<description>A fertilized daedroth egg. If all goes well, it should hatch into a baby daedroth. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,138,138)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>28.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>16</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Daedroth</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Ogrim -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_OgrimFertilized</defName>
+		<label>ogrim egg (fert.)</label>
+		<description>A fertilized ogrim egg. If all goes well, it should hatch into a baby ogrim. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,138,138)</color>
+		  <drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>30.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>18</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Ogrim</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Nix ox -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_NixOxFertilized</defName>
+		<label>nix ox egg (fert.)</label>
+		<description>A fertilized nix ox egg. If all goes well, it should hatch into a nix ox calf. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_InsectEgg</texPath>
+		  <color>(108,94,79)</color>
+		  <drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19.0</MarketValue>
+		  <Nutrition>0.20</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>7</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_NixOx</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<!-- tiger guar -->
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_TigerGuarFertilized</defName>
+		<label>tiger guar egg (fert.)</label>
+		<description>A fertilized tiger guar egg. If all goes well, it should hatch into a tiger guar calf. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,124,109)</color>
+		  <drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>9</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_TigerGuar</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Bantam Guar -->
+	
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>MorrowRim_Egg_BantamGuarUnfertilized</defName>
+		<label>bantam guar egg (unfert.)</label>
+		<description>An unfertilized bantam guar egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+		  <color>(228,185,135)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>7.0</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_BantamGuarFertilized</defName>
+		<label>bantam guar egg (fert.)</label>
+		<description>A fertilized bantam guar egg. If all goes well, it should hatch into a bantam guar whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_BantamGuar</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Fungal Shalk -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_FungalShalkFertilized</defName>
+		<label>fungal shalk egg (fert.)</label>
+		<description>A fertilized shalk egg. If all goes well, it should hatch into a baby fungal shalk. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_InsectEgg</texPath>
+		  <color>(109,111,109)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>16</MarketValue>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>4.7</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_FungalShalk</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<!-- Wormmouth -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_WormmouthFertilized</defName>
+		<label>wormouth egg (fert.)</label>
+		<description>A fertilized wormouth egg. If all goes well, it should hatch into an wormouth whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,124,109)</color>
+		  <drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>10</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Wormmouth</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Scuttler -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_ScuttlerFertilized</defName>
+		<label>scuttler egg (fert.)</label>
+		<description>A fertilized scuttler egg. If all goes well, it should hatch into a scuttler whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+		  <color>(109,111,109)</color>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>10</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>1</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Scuttler</hatcherPawn>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

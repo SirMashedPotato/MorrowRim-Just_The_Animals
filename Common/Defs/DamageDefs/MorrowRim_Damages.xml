@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef ParentName="Bite">
+		<defName>MorrowRim_BurnBite</defName>
+		<label>bite</label>
+		<hediff>ChemicalBurn</hediff>
+		<!--<workerClass>DamageWorker_AddInjury</workerClass>-->
+	</DamageDef>
+	
+	<DamageDef ParentName="Bite">
+		<defName>MorrowRim_ParalyticBite</defName>
+		<label>paralytic bite</label>
+		<additionalHediffs>
+		  <li>
+			<hediff>MorrowRim_Paralysis</hediff>
+			<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		  </li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<!-- 1.4 -->
+	
+	<DamageDef ParentName="Scratch">
+    <defName>MorrowRim_ScratchBleed</defName>
+    <label>lacerating scratch</label>
+    <additionalHediffs>
+      <li>
+        <hediff>BloodLoss</hediff>
+        <severityPerDamageDealt>0.005</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <!-- 1.6 -->
+  
+  <DamageDef ParentName="Scratch">
+    <defName>MorrowRim_ScratchParalysis</defName>
+    <label>paralysing scratch</label>
+    <additionalHediffs>
+      <li>
+        <hediff>MorrowRim_Paralysis</hediff>
+        <severityPerDamageDealt>0.005</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Flame">
+		<defName>MorrowRim_AcidBurn</defName>
+		<label>acid burn</label>
+		<hediff>ChemicalBurn</hediff>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+	</DamageDef>
+	
+</Defs>

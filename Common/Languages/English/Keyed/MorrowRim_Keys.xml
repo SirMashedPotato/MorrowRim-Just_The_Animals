@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+	<!--ash resistance -->
+    <MorrowRim_AshResistant>Resistant to ash-storms</MorrowRim_AshResistant>
+    <MorrowRim_AshProtection>Protects against ash-storms</MorrowRim_AshProtection>
+	
+    <MorrowRim_AshResistant_Description>Whether an animal is resistant to the effects of ash storms.\n\nIf an animal is resistant it will avoid all ash buildup when outside during an ash-storm.\n\nMechanoids, and other robotic constructs, may be resistant to ash buildup, but their servos may temporarily become clogged with ash.\n\nEven if an organic life-form is resistant to the affects of ash storms, it may occasionally suffer temporary blindness during one.</MorrowRim_AshResistant_Description>
+    <MorrowRim_AshResistant_DescriptionPlant>Whether a plant is resistant to the effects of ash storms.\n\nIf a plant is not resistant it will slowly take damage during an ash storm, eventually killing the plant.</MorrowRim_AshResistant_DescriptionPlant>
+    <MorrowRim_AshResistant_DescriptionApparel>Whether worn apparel will protect the wearer from the effects of ash storms.\n\nIf the apparel does not cover the wearers eyes it will only prevent ash buildup.</MorrowRim_AshResistant_DescriptionApparel>
+    
+    <MorrowRim_AshResistant_Susceptible>No</MorrowRim_AshResistant_Susceptible>
+    <MorrowRim_AshResistant_Resistant>Yes</MorrowRim_AshResistant_Resistant>
+    <MorrowRim_AshResistant_Mechanical>Mechanical</MorrowRim_AshResistant_Mechanical>
+	
+	<MorrowRim_shedGrowth>progress until next harvest</MorrowRim_shedGrowth>
+	<!-- Events -->
+	<LetterLabelSiltStriderPasses>silt strider enters the area</LetterLabelSiltStriderPasses>
+	<LetterSiltStriderPasses>Silt striders have wandered into the area.\n\nTaming them would gain your colony a useful long distance transport animal.\n\nThey will leave in a few days.</LetterSiltStriderPasses>
+	
+	<LetterLabelAlbinoGuarPasses>albino guar enters the area</LetterLabelAlbinoGuarPasses>
+	<LetterAlbinoGuarPasses>An albino guar has wandered into the area.\n\nIt can be sold for a substantial ammount to collectors.\n\nIt will leave in a few days.</LetterAlbinoGuarPasses>
+	
+	<LetterLabelCliffRacerSwarm>cliff racer swarm enters the area</LetterLabelCliffRacerSwarm>
+	<LetterCliffRacerSwarm>A swarm of cliff racers has entered the area.\n\nIt may be best to deal with them quickly before the swarm grows too large.\n\nThey will leave in a few days.</LetterCliffRacerSwarm>
+	
+	<LetterLabelCliffRacerSwarmManhunter>cliff racer swarm enters the area</LetterLabelCliffRacerSwarmManhunter>
+	<LetterCliffRacerSwarmManhunter>A swarm of cliff racers has entered the area.\n\nIt may be best to deal with them quickly before the swarm grows too large.\n\nThis swarm appears to be unusually agressive.</LetterCliffRacerSwarmManhunter>
+
+	<!-- kawma nests -->
+	<LetterLabelKwamaNestThreatened>kwama nest threatened</LetterLabelKwamaNestThreatened>
+	<LetterKwamaNestThreatened>A kwama nest has been threatened and will now defend their hive agressively. They will return to a passive state when they feel safe.</LetterKwamaNestThreatened>
+	<LetterLabelKwamaNestCalmed>kwama nest calmed</LetterLabelKwamaNestCalmed>
+	<LetterKwamaNestCalmed>A kwama nest that had previously felt threatened has now returned to a calm state. It is safe to enter the nest again.</LetterKwamaNestCalmed>
+	
+	<LetterLabelKwamaNestEmerges>kwama nest expands</LetterLabelKwamaNestEmerges>
+	<LetterKwamaNestEmerges>A kwama nest is expanding into a nearby cave. They will remain peaceful, unless threatened.</LetterKwamaNestEmerges>
+
+	<!-- mod settings -->
+	
+	<MorrowRim_SettingEnableLightingEffects>Enable ash weathers decreasing lighting levels.</MorrowRim_SettingEnableLightingEffects>
+	
+	<MorrowRim_SettingEnableAshEffects>Enable ash storms causing effects (damaging plants, causing ash buildup, clogging servos, filling eyes).</MorrowRim_SettingEnableAshEffects>
+	<MorrowRim_SettingAshFilledEye>The chance of ash filled eyes during an ash storm damage event.</MorrowRim_SettingAshFilledEye>
+	<MorrowRim_SettingAshCloggedServo>The chance of ash clogged servos during an ash storm damage event.</MorrowRim_SettingAshCloggedServo>
+	<MorrowRim_SettingAshIgnoreResistance>Ignore ash resistance for animals and plants.</MorrowRim_SettingAshIgnoreResistance>
+	<MorrowRim_SettingAshBuildupMultiplier>The multiplier added to ash buildup during an ash storm.</MorrowRim_SettingAshBuildupMultiplier>
+	<MorrowRim_SettingAshPlantDamage>The average amount of damage a plant can receive during an ash storm damage event.</MorrowRim_SettingAshPlantDamage>
+	<MorrowRim_SettingAshPlantChance>The chance a plant takes damage during an ash storm damage event.</MorrowRim_SettingAshPlantChance>
+	
+	<MorrowRim_SettingEnableBlightEffects>Enable blight storms causing effects (crop blights, mad animals).</MorrowRim_SettingEnableBlightEffects>
+	<MorrowRim_SettingBlightPlantChance>The chance a plant becomes blighted during an ash storm blight event.</MorrowRim_SettingBlightPlantChance>
+	<MorrowRim_SettingBlightPlantNumber>The maximum number of plants that can become blighted during a single ash storm blight event.</MorrowRim_SettingBlightPlantNumber>
+	<MorrowRim_SettingBlightAnimalChance>The chance an animal turns manhunter during an ash storm blight event.</MorrowRim_SettingBlightAnimalChance>
+	<MorrowRim_SettingBlightAnimalIgnoreScaling>Ignore the colonies threat points value when turning an animal manhunter.</MorrowRim_SettingBlightAnimalIgnoreScaling>
+	<MorrowRim_SettingBlightAnimalNumber>The maximum number of animals that can turn manhunter during a single ash storm blight event.</MorrowRim_SettingBlightAnimalNumber>
+	<MorrowRim_SettingBlightAnimalMultiplier>A multiplier for the threat points, used when checking for potential manhunter targets during an ash blight storm.</MorrowRim_SettingBlightAnimalMultiplier>
+	
+	<MorrowRim_SettingBiomeEnableAshlands>Enable generation of the ashlands biome.</MorrowRim_SettingBiomeEnableAshlands>
+	<MorrowRim_SettingBiomeEnableBlightedAshlands>Enable generation of the blighted ashlands biome.</MorrowRim_SettingBiomeEnableBlightedAshlands>
+	
+	<MorrowRim_SettingEnableKwamaNestEmerging>Enable the kwama nest emerges incident.</MorrowRim_SettingEnableKwamaNestEmerging>
+	<MorrowRim_SettingEnableKwamaTrojanInfestation>Enable the trojan infestation incident.</MorrowRim_SettingEnableKwamaTrojanInfestation>
+	<MorrowRim_SettingForceKwamaNatural>Force kwama nests to spawn on natural floors.</MorrowRim_SettingForceKwamaNatural>
+	<MorrowRim_SettingKwamaMaxNests>The maximum number of kwama nests on any single map.</MorrowRim_SettingKwamaMaxNests>
+	<MorrowRim_SettingKwamaMinDistance>The maximum calculated distance from a kwama egg mine for kwama nests to generate on map creation.</MorrowRim_SettingKwamaMinDistance>
+	
+	<MorrowRim_SettingEnableCliffRacerEvents>Enable the cliff racer incidents.</MorrowRim_SettingEnableCliffRacerEvents>
+	<MorrowRim_SettingEnableSiltStriderEvent>Enable the silt strider incident.</MorrowRim_SettingEnableSiltStriderEvent>
+	<MorrowRim_SettingEnableAlbinoGuarEvent>Enable the albino guar incident.</MorrowRim_SettingEnableAlbinoGuarEvent>
+	
+	<MorrowRim_SettingEnableScribBehaviour>Enable the custom kwama scrib behaviour, allowing them to munch on scrib cabbage.</MorrowRim_SettingEnableScribBehaviour>
+	<MorrowRim_SettingEnableScampBehaviour>Enable the custom scamp behaviour, allowing them to take drugs.</MorrowRim_SettingEnableScampBehaviour>
+	<MorrowRim_SettingEnableScampInsults>Enable the custom scamp behaviour, allowing them to insult humanlike pawns.</MorrowRim_SettingEnableScampInsults>
+	
+	<MorrowRim_SettingVFIChitinIntegration>Vanilla Factions Expanded - Insectoids. Give all insects from this mod that currently lack a leather def VFE-I chitin.</MorrowRim_SettingVFIChitinIntegration>
+	
+	<!-- pages -->
+	<MorrowRim_PageDefault>Main settings page</MorrowRim_PageDefault>
+	<MorrowRim_PageAsh>Ash storm settings</MorrowRim_PageAsh>
+	<MorrowRim_PageBlight>Blight storm settings</MorrowRim_PageBlight>
+	<MorrowRim_PageBiome>Biome settings</MorrowRim_PageBiome>
+	<MorrowRim_PageKwama>Kwama settings</MorrowRim_PageKwama>
+	<MorrowRim_PageIncident>Incident settings</MorrowRim_PageIncident>
+	<MorrowRim_PageAnimalBehaviour>Animal behaviour settings</MorrowRim_PageAnimalBehaviour>
+	<MorrowRim_PageModIntegration>Mod integration settings</MorrowRim_PageModIntegration>
+	
+	<MorrowRim_ModIntegrationText1>Any changes to these settings will only take effect after the game is restarted.</MorrowRim_ModIntegrationText1>
+	<MorrowRim_ModIntegrationText2>Specific settings will only appear if the corresponding mod is enabled.</MorrowRim_ModIntegrationText2>
+	
+	<!-- Resets -->
+	<MorrowRim_ResetDefault>Reset all settings to default</MorrowRim_ResetDefault>
+	<MorrowRim_ResetIncident>Reset incident settings to default</MorrowRim_ResetIncident>
+	<MorrowRim_ResetAsh>Reset ash storm settings to default</MorrowRim_ResetAsh>
+	<MorrowRim_ResetBlight>Reset blight storm settings to default</MorrowRim_ResetBlight>
+	<MorrowRim_ResetBiome>Reset biome settings to default</MorrowRim_ResetBiome>
+	<MorrowRim_ResetKwama>Reset kwama settings to default</MorrowRim_ResetKwama>
+	<MorrowRim_ResetAnimalBehaviour>Reset animal behaviour settings to default</MorrowRim_ResetAnimalBehaviour>
+	<MorrowRim_ResetModIntegration>Reset mod integration settings to default</MorrowRim_ResetModIntegration>
+	
+</LanguageData>

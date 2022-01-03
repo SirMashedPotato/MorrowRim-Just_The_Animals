@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>MorrowRim_CrushScrib</defName>
+		<label>crush dead scrib</label>
+		<description>Crush a dead scrib, producing scrib jelly instead of insect meat and chitin.</description>
+		<jobString>Crushing dead scrib.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>TableButcher</li>
+			<li>ButcherSpot</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Corpse_MorrowRim_KwamaScrib</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Corpse_MorrowRim_KwamaScrib</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MorrowRim_ScribJelly>6</MorrowRim_ScribJelly>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>MorrowRim_AshCuisine</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MorrowRim_CrushAshHopper</defName>
+		<label>crush dead ash hopper</label>
+		<description>Crush a dead ash hopper, producing ash hopper jelly instead of insect meat and chitin.</description>
+		<jobString>Crushing dead scrib.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>TableButcher</li>
+			<li>ButcherSpot</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Corpse_MorrowRim_AshHopper</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Corpse_MorrowRim_AshHopper</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MorrowRim_AshHopperJelly>10</MorrowRim_AshHopperJelly>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>MorrowRim_AshCuisine</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

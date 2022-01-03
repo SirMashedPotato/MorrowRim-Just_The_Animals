@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>MorrowRim_HarvestAnimalGrowth</defName>
+    <driverClass>MorrowRim.JobDriver_HarvestAnimalGrowth</driverClass>
+    <reportString>harvesting growth from TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

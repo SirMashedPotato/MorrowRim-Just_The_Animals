@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef>
+		<defName>MorrowRim_Kwama</defName>
+		<label>kwama</label>
+		<pawnSingular>kwama</pawnSingular>
+		<pawnsPlural>kwama</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Kwama Hives</fixedName>
+		<factionIconPath>World/WorldObjects/Expanding/Sites/Manhunters</factionIconPath>
+		<raidCommonalityFromPointsCurve>
+		  <points>
+			<li>(0, 0)</li>
+		  </points>
+		</raidCommonalityFromPointsCurve>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+		<raidLootValueFromPointsCurve>
+		  <points>
+			<li>(0, 0)</li>
+		  </points>
+		</raidLootValueFromPointsCurve>
+	</FactionDef>
+
+</Defs>

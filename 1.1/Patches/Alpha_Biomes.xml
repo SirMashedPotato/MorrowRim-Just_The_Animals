@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- AB_FeraliskInfestedJungle -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.05</MorrowRim_CliffRacer>
+						<MorrowRim_Wormmouth>0.05</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.1</MorrowRim_Guar>
+						<MorrowRim_Netch>0.1</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.1</MorrowRim_RetchingNetch>
+						<MorrowRim_NixHound>0.05</MorrowRim_NixHound>
+						<MorrowRim_KwamaScrib>0.1</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.1</MorrowRim_KwamaForager>
+						<MorrowRim_FungalShalk>0.1</MorrowRim_FungalShalk>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/allowedPackAnimals</xpath>
+					<value>
+						<li>MorrowRim_Guar</li>
+					</value>			
+				</li>
+
+				<!-- AB_GallatrossGraveyard -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_Alit>0.1</MorrowRim_Alit>
+						<MorrowRim_CliffRacer>0.3</MorrowRim_CliffRacer>
+						<MorrowRim_Kagouti>0.1</MorrowRim_Kagouti>
+						<MorrowRim_Wormmouth>0.1</MorrowRim_Wormmouth>
+						<MorrowRim_Guar>0.6</MorrowRim_Guar>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_Shalk>0.9</MorrowRim_Shalk>
+						<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+				
+				<!-- AB_GelatinousSuperorganism -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
+						<MorrowRim_Guar>0.4</MorrowRim_Guar>
+						<MorrowRim_Netch>0.5</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.4</MorrowRim_RetchingNetch>
+						<MorrowRim_NixHound>0.1</MorrowRim_NixHound>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>	
+				
+				<!-- AB_MechanoidIntrusion -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_MechanoidIntrusion"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+					</value>			
+				</li>
+				
+				<!-- AB_MycoticJungle -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
+						<MorrowRim_Netch>0.5</MorrowRim_Netch>
+						<MorrowRim_RetchingNetch>0.4</MorrowRim_RetchingNetch>
+						<MorrowRim_KwamaScrib>0.9</MorrowRim_KwamaScrib>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+						<MorrowRim_FungalShalk>0.6</MorrowRim_FungalShalk>
+						
+						<MorrowRim_Scamp>0.01</MorrowRim_Scamp>
+						<MorrowRim_Clannfear>0.009</MorrowRim_Clannfear>
+						<MorrowRim_Daedroth>0.007</MorrowRim_Daedroth>
+						<MorrowRim_Hunger>0.007</MorrowRim_Hunger>
+						<MorrowRim_Ogrim>0.005</MorrowRim_Ogrim>
+					</value>			
+				</li>
+				
+				<!-- AB_OcularForest -->
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AB_OcularForest"]/wildAnimals</xpath>
+					<value>
+						<MorrowRim_CliffRacer>0.1</MorrowRim_CliffRacer>
+						<MorrowRim_KwamaForager>0.9</MorrowRim_KwamaForager>
+					</value>			
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+		
+</Patch>
+
