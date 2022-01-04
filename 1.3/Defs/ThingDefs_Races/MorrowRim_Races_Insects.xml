@@ -855,7 +855,7 @@
 				<eggCountRange>1~3</eggCountRange>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>MorrowRim_RawAshFungus</woolDef>
+				<woolDef>RawFungus</woolDef>
 				<shearIntervalDays>3.6</shearIntervalDays>
 				<woolAmount>10</woolAmount>
 			</li>
@@ -899,7 +899,7 @@
 		</tradeTags>
 		<butcherProducts>
 		  <MorrowRim_ShalkResin>2</MorrowRim_ShalkResin>
-		  <MorrowRim_RawAshFungus>8</MorrowRim_RawAshFungus>
+		  <RawFungus>8</RawFungus>
 		</butcherProducts>
 	  </ThingDef>
 	  

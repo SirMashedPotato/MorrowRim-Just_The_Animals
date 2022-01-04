@@ -21,10 +21,13 @@
   
 	<ThingDef ParentName="BaseFilth">
 		<defName>MorrowRim_Filth_RetchingNetchBlood</defName>
-		<label>netch blood</label>
+		<label>retching netch blood</label>
+		<useHitPoints>true</useHitPoints>
 		<statBases>
 		  <Beauty>-30</Beauty>
 		  <Cleanliness>-5</Cleanliness>
+		  <MaxHitPoints>150</MaxHitPoints>
+		  <Flammability>1.5</Flammability>
 		</statBases>
 		<graphicData>
 		  <texPath>Things/Filth/PoolSoft</texPath>
