@@ -8,8 +8,8 @@ using System.Linq;
 
 namespace MorrowRim
 {
-    public class IncidentWorker_SiltStrider : IncidentWorker
-    {
+	public class IncidentWorker_SiltStrider : IncidentWorker
+	{
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
 			if (!base.CanFireNowSub(parms) || !ModSettings_Utility.MorrowRim_SettingEnableSiltStriderEvent())

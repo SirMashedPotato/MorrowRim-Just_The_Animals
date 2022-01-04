@@ -21,7 +21,7 @@ namespace MorrowRim
 			return !map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout) && map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDefOf.MorrowRim_AlbinoGuar) && this.TryFindEntryCell(map, out intVec);
 		}
 
-			//
+		//
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;

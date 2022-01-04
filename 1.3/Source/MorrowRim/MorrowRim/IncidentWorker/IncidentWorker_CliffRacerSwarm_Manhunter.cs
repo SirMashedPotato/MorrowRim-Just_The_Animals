@@ -8,8 +8,8 @@ using System.Linq;
 
 namespace MorrowRim
 {
-    public class IncidentWorker_CliffRacerSwarm_Manhunter : IncidentWorker
-    {
+	public class IncidentWorker_CliffRacerSwarm_Manhunter : IncidentWorker
+	{
 		protected override bool CanFireNowSub(IncidentParms parms)
 		{
 			if (!base.CanFireNowSub(parms) || !ModSettings_Utility.MorrowRim_SettingEnableCliffRacerEvents())
@@ -17,7 +17,7 @@ namespace MorrowRim
 				return false;
 			}
 			Map map = (Map)parms.target;
-			PawnKindDef pawnKindDef;	//overwrite with cliff racer later
+			PawnKindDef pawnKindDef;    //overwrite with cliff racer later
 			IntVec3 intVec;
 			return ManhunterPackIncidentUtility.TryFindManhunterAnimalKind(parms.points, map.Tile, out pawnKindDef) && RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal, false, null);
 		}
@@ -35,7 +35,7 @@ namespace MorrowRim
 			{
 				return false;
 			}
-			List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(pawnKind, map.Tile, parms.points * 1f);
+			List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(pawnKind, map.Tile, parms.points * PointsFactor);
 			Rot4 rot = Rot4.FromAngleFlat((map.Center - spawnCenter).AngleFlat);
 			for (int i = 0; i < list.Count; i++)
 			{
@@ -43,7 +43,7 @@ namespace MorrowRim
 				IntVec3 loc = CellFinder.RandomClosewalkCellNear(spawnCenter, map, 10, null);
 				QuestUtility.AddQuestTag(GenSpawn.Spawn(pawn, loc, map, rot, WipeMode.Vanish, false), parms.questTag);
 				pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, false, false, null, false);
-				pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(300000, 600000);
+				pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(AnimalsStayDurationMin, AnimalsStayDurationMax);
 			}
 			Find.LetterStack.ReceiveLetter("LetterLabelCliffRacerSwarmManhunter".Translate(), "LetterCliffRacerSwarmManhunter".Translate(), LetterDefOf.ThreatBig, list[0], null, null);
 			Find.TickManager.slower.SignalForceNormalSpeedShort();

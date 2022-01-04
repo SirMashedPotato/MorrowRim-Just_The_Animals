@@ -55,15 +55,15 @@
 						<!-- insulting -->
 						<li Class="ThinkNode_ConditionalRequireCapacities">
 							<requiredCapacities>
-								<li>Talking</li>
+								<li>Consciousness</li>
 							</requiredCapacities>
 							<subNodes>
 							
 								<li Class="MorrowRim.ThinkNode_ConditionalScampInsults">
 									<subNodes>
-									
+
 										<li Class="ThinkNode_ChancePerHour_Constant">
-											<mtbDays>7.5</mtbDays>
+											<mtbDays>5.0</mtbDays>
 											<subNodes>
 												<li Class="ThinkNode_ConditionalTrainableCompleted">
 													<trainable>Obedience</trainable>
@@ -78,9 +78,9 @@
 												</li>
 											</subNodes>
 										</li>
-										
+		
 										<li Class="ThinkNode_ChancePerHour_Constant">
-											<mtbDays>5.0</mtbDays>
+											<mtbDays>3.3</mtbDays>
 											<subNodes>
 												<li Class="ThinkNode_ConditionalTrainableCompleted">
 													<trainable>Release</trainable>
