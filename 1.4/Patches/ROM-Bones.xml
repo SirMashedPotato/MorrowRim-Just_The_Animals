@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim of Madness - Bones</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Remove bones from animals -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_Netch"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_RetchingNetch"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_SiltStrider"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_NixHound"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_Shalk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_AshHopper"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_NixOx"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_FungalShalk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

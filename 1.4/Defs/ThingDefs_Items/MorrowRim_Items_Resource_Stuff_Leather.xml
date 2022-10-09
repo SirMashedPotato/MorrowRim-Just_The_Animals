@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Guar -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_GuarHide</defName>
+		<label>guar hide</label>
+		<description>A tough scaly hide harvested from a guar. It is difficult to pierce and insulates relatively well against the heat.</description>
+		<graphicData>
+		  <color>(172,105,103)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>2.2</MarketValue>
+		  <StuffPower_Armor_Sharp>0.84</StuffPower_Armor_Sharp>
+		  <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(172,125,103)</color>
+		  <commonality>0.075</commonality>
+		  <statFactors>
+			<Beauty>1.1</Beauty>
+		  </statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Albino Guar -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_AlbinoGuarHide</defName>
+		<label>white guar hide</label>
+		<description>A luxurious scaly hide harvested from an albino guar. It is difficult to pierce and insulates relatively well against the heat.</description>
+		<graphicData>
+		  <color>(227, 208, 199)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>10.0</MarketValue>
+		  <StuffPower_Armor_Sharp>0.84</StuffPower_Armor_Sharp>
+		  <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(227, 208, 1993)</color>
+		  <commonality>0.0075</commonality>
+		  <statFactors>
+			<Beauty>2.1</Beauty>
+		  </statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Netch -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_NetchLeather</defName>
+		<label>netch leather</label>
+		<description>Tanned, dried, scraped netch skin. Tough and light, but a poor insulator.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/InsectChitin</texPath>
+		  <color>(133,111,94)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3.0</MarketValue>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
+			<Mass>0.015</Mass>
+			<StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(133,111,94)</color>
+		  <commonality>0.025</commonality>
+		  <statFactors>
+			<MaxHitPoints>1.5</MaxHitPoints>
+			<Beauty>1.2</Beauty>
+		  </statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Silt-strider -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>MorrowRim_SiltStriderChitin</defName>
+		<label>silt strider chitin</label>
+		<description>Chitin plates harvested from a silt strider. Sturdy enough to be used as a building material. Relatively light.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/InsectChitin</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <color>(85,72,57)</color>
+		</graphicData>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+		  <MarketValue>2.4</MarketValue>
+		  <Mass>0.3</Mass>
+		  <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+		  <SharpDamageMultiplier>1</SharpDamageMultiplier>
+		  <BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+		  <li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>0.001</deepCommonality>
+		<deepCountPerPortion>35</deepCountPerPortion>
+		<deepLumpSizeRange>20~40</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<stuffProps>
+		  <categories>
+			<li>Stony</li>
+			<li>Woody</li>
+			<li>Metallic</li>
+		  </categories>
+		  <commonality>0.01</commonality>
+		  <constructEffect>ConstructMetal</constructEffect>
+		  <color>(85,72,57)</color>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+		  <statFactors>
+			<MaxHitPoints>1.2</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<Flammability>0.2</Flammability>
+		  </statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Nix-hound -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_NixHoundLeather</defName>
+		<label>nix hound leather</label>
+		<description>Tanned, dried, scraped nix hound skin. Tough and light, but a poor insulator.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/InsectChitin</texPath>
+		  <color>(129,132,75)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>3.0</MarketValue>
+		  <StuffPower_Armor_Sharp>1.02</StuffPower_Armor_Sharp>
+		  <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(129,132,75)</color>
+		  <commonality>0.075</commonality>
+		  <statFactors>
+			<Beauty>1.3</Beauty>
+		  </statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Alit and Kagouti -->
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_HeavyLeather</defName>
+		<label>heavy scaled leather</label>
+		<description>Thick scaly leather. Harvested from an alit, kagouti or tiger guar. This thick skin insulates relatively well and protects very well.</description>
+		<graphicData>
+		  <color>(121,113,83)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>3.4</MarketValue>
+		  <StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+		  <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(121,113,83)</color>
+		  <commonality>0.025</commonality>
+		  <statFactors>
+			<MaxHitPoints>1.5</MaxHitPoints>
+			<Beauty>1.85</Beauty>
+		  </statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Durzog -->
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_DurzogLeather</defName>
+		<label>durzog leather</label>
+		<description>Tanned, dried, scraped durzog skin. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+		  <color>(111,118,71)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.9</MarketValue>
+		  <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.21</StuffPower_Armor_Blunt>
+		  <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(111,118,71)</color>
+		  <commonality>0.05</commonality>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Cliff racer -->
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_CliffRacerLeather</defName>
+		<label>cliff racer leather</label>
+		<description>Tanned, dried, scraped cliff racer skin. Light and flimsy, but offers good protection against the heat. Most people who frequent the ashlands despise the sight of it.</description>
+		<graphicData>
+		  <color>(89,99,86)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>0.4</MarketValue>
+		  <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.0</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+		  <Beauty>-5</Beauty>
+		  <Comfort>-1</Comfort>
+		</statBases>
+		<stuffProps>
+		  <color>(89,99,86)</color>
+		  <commonality>0.005</commonality>
+		  <statFactors>
+			<MaxHitPoints>0.2</MaxHitPoints>
+			<Beauty>-5</Beauty>
+			<Comfort>-1</Comfort>
+		  </statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Corprus -->
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_CorprusWeepings</defName>
+		<label>corprus weepings</label>
+		<description>Skin carved from a corprus victim. It is coated in hardened puss and smells rancid. Completely useless in crafting, and worth effectively nothing. It serves only as a reminder of what once was.</description>
+		<graphicData>
+		  <color>(211,194,143)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>0.1</MarketValue>
+		  <StuffPower_Armor_Sharp>0.0</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+		  <Comfort>-5</Comfort>
+		</statBases>
+		<stuffProps>
+		  <color>(211,194,143)</color>
+		  <commonality>0.0</commonality>
+		  <statFactors>
+			<Beauty>-10</Beauty>
+			<Comfort>-5</Comfort>
+		  </statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<!-- Daedra -->
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>MorrowRim_DaedraHide</defName>
+		<label>daedra hide</label>
+		<description>Tough hide from a daedra. Rather protective and a decent insulator with high durability.</description>
+		<graphicData>
+		  <color>(101,93,63)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>4.5</MarketValue>
+		  <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+		  <StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>19</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+		  <color>(101,93,63)</color>
+		  <commonality>0.0025</commonality>
+		  <statFactors>
+			<MaxHitPoints>2.5</MaxHitPoints>
+			<Beauty>1.9</Beauty>
+		  </statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Scrib jelly -->
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>MorrowRim_ScribJelly</defName>
+		<label>scrib jelly</label>
+		<description>A jelly like substance produced by crushing a dead scrib. While not particularly tasty, it is perfectly safe to be eaten raw and is rather nutritious.\nCan be refined with muck to produce herbal medicine.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/ScribJelly</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>(0.7)</drawSize>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MarketValue>2.5</MarketValue>
+		  <Mass>0.045</Mass>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		  <Nutrition>0.4</Nutrition>
+		  <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>6</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<ingestible>
+		  <tasteThought>AteInsectMeatDirect</tasteThought>
+		  <preferability>RawBad</preferability>
+		  <foodType>AnimalProduct</foodType>
+		</ingestible>
+		<thingCategories>
+		  <li>AnimalProductRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Ash hopper jelly -->
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>MorrowRim_AshHopperJelly</defName>
+		<label>ash hopper jelly</label>
+		<description>A jelly like substance produced by crushing a dead ash hopper. While not particularly tasty, it is perfectly safe to be eaten and is rather nutritious.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/AshHopperJelly</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>(0.7)</drawSize>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MarketValue>2.3</MarketValue>
+		  <Mass>0.045</Mass>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		  <Nutrition>0.5</Nutrition>
+		  <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>8</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<ingestible>
+		  <tasteThought>AteInsectMeatDirect</tasteThought>
+		  <preferability>RawBad</preferability>
+		  <foodType>AnimalProduct</foodType>
+		</ingestible>
+		<thingCategories>
+		  <li>AnimalProductRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

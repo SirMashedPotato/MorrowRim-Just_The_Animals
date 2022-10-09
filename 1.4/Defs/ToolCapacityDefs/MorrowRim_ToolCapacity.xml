@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ToolCapacityDef>
+    <defName>MorrowRim_BurnBite</defName>
+    <label>Bite</label>
+  </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>MorrowRim_ParalyticBite</defName>
+    <label>Bite</label>
+  </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>MorrowRim_ScratchBleed</defName>
+    <label>Lacerating scratch</label>
+  </ToolCapacityDef>
+
+</Defs>

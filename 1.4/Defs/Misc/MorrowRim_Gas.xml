@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef>
+		<defName>Gas_RetchingNetch</defName>
+		<thingClass>MorrowRim.Gas_RetchingNetch</thingClass>
+		<label>retching netch gas</label>
+		<category>Gas</category>
+		<altitudeLayer>Gas</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Gas</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<texPath>Things/Gas/Puff</texPath>
+			<drawSize>2.2</drawSize>
+			<color>(79,173,145,50)</color>
+		</graphicData>
+		<gas>
+			<expireSeconds>10~16</expireSeconds>
+			<rotationSpeed>10</rotationSpeed>
+		</gas>
+	</ThingDef>
+</Defs>

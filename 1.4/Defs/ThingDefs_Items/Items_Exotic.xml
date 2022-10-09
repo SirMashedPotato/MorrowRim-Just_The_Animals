@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Animal parts -->
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>MorrowRim_KagoutiTusk</defName>
+		<label>kagouti tusk</label>
+		<description>A kagouti's tusk. It is very durable and valuable. While somewhat unwieldy as a melee weapon, it can still be deadly.</description>
+		<graphicData>
+		  <texPath>Things/Item/Special/ElephantTusk</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<statBases>
+		  <MarketValue>20</MarketValue>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>1.0</Mass>
+		  <Flammability>0.7</Flammability>
+		  <DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>10</stackLimit>
+		<tools>
+		  <li>
+			<label>point</label>
+			<capacities>
+			  <li>Scratch</li>
+			  <li>Stab</li>
+			</capacities>
+			<power>12.2</power>
+			<cooldownTime>2.2</cooldownTime>
+		  </li>
+		  <li>
+			<label>base</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>6</power>
+			<cooldownTime>2</cooldownTime>
+			<chanceFactor>0.5</chanceFactor>
+		  </li>
+		</tools>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<tradeTags>
+		  <li>ExoticMisc</li>
+		  <li>AshlandRare</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>AnimalPart</li>
+		</thingSetMakerTags>
+		
+	</ThingDef>
+  
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>MorrowRim_OgrimHorn</defName>
+		<label>ogrim horn</label>
+		<description>An ogrim's horn. Dense, like an ogrim's skull, though not as hollow. It makes a rather decent club, of course one could also sell it for a hefty pouch.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Exotic/MorrowRim_OgrimHorn</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<statBases>
+		  <MarketValue>350</MarketValue>
+		  <MaxHitPoints>200</MaxHitPoints>
+		  <Mass>5</Mass>
+		  <Flammability>0.2</Flammability>
+		  <DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>10</stackLimit>
+		<tools>
+		  <li>
+			<label>point</label>
+			<capacities>
+			  <li>Scratch</li>
+			  <li>Stab</li>
+			</capacities>
+			<power>6</power>
+			<cooldownTime>2.5</cooldownTime>
+			<chanceFactor>0.25</chanceFactor>
+		  </li>
+		  <li>
+			<label>base</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>18</power>
+			<cooldownTime>2.7</cooldownTime>
+		  </li>
+		</tools>
+		<thingCategories>
+		  <li>Items</li>
+		</thingCategories>
+		<tradeTags>
+		  <li>ExoticMisc</li>
+		  <li>AshlandExotic</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>AnimalPart</li>
+		</thingSetMakerTags>
+		
+	</ThingDef>
+  
+  <!-- Artifacts -->
+  
+  
+
+</Defs>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TentacleAttackTool_FR</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TentacleAttackTool_FL</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TentacleAttackTool_MR</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TentacleAttackTool_ML</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TentacleAttackTool_BR</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TentacleAttackTool_BL</defName>
+		<label>tentacle</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_InsectArmAttackTool_L</defName>
+		<label>scythed arm</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_InsectArmAttackTool_R</defName>
+		<label>scythed arm</label>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>MorrowRim_TailAttackTool</defName>
+		<label>tail stinger</label>
+	</BodyPartGroupDef>
+
+</Defs>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ash panther -->
+	
+	<ThingDef ParentName="BigCatThingBase">
+
+		<defName>MorrowRim_AshPanther</defName>
+		<label>ash panther</label>
+		<description>A large species of cat that has adapted to life in the ashlands. The colouration of its fur allows it to easily blend in amongst the ash covered terrain, waiting patiently for prey to get close. The ash panther then strikes with its claws, causing deep lacerations that bleed profusely.</description>
+		<statBases>
+		  <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <MarketValue>500</MarketValue>
+		  <FilthRate>2</FilthRate>
+		</statBases>
+		<!-- uses modified warg -->
+		<tools>
+		  <li>
+			<label>front left claws</label>
+			<capacities>
+			  <li>MorrowRim_ScratchBleed</li>
+			</capacities>
+			<power>13</power>
+			<cooldownTime>1.5</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>front right claws</label>
+			<capacities>
+			  <li>MorrowRim_ScratchBleed</li>
+			</capacities>
+			<power>13</power>
+			<cooldownTime>1.5</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>teeth</label>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>12</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.9</chanceFactor>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		</tools>
+		<race>
+			<maxPreyBodySize>2.3</maxPreyBodySize>
+			<petness>0.001</petness>
+			<baseBodySize>1.6</baseBodySize>
+			<baseHungerRate>0.25</baseHungerRate>
+			<baseHealthScale>1.4</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+		</race>
+		<tradeTags>
+		  <li>AnimalExotic</li>
+		  <li>AshlandAnimalRare</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigCatKindBase">
+		<defName>MorrowRim_AshPanther</defName>
+		<label>ash panther</label>
+		<race>MorrowRim_AshPanther</race>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+			  <drawSize>1.2</drawSize>
+			  <color>(129,118,106)</color>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+			  <drawSize>1.2</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+			  <color>(129,118,106)</color>
+			  <drawSize>1.5</drawSize>
+			  <shadowData>
+				<volume>(0.3, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.3)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+			  <drawSize>1.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+			  <color>(129,118,106)</color>
+			  <drawSize>2.3</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.1)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+			  <drawSize>2.3</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Netch -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_Netch</defName>
+		<label>netch</label>
+		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nOften farmed by ashlanders for their jelly and leather. Netch are highly protective of their eggs and lay them on their body, preventing the possibilty of harvesting them.</description>
+		<statBases>
+		  <ToxicResistance>1</ToxicResistance>
+		  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+		  <MoveSpeed>3.0</MoveSpeed>
+		  <MarketValue>300</MarketValue>
+		  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+		  <MeatAmount>0</MeatAmount>
+		  <FilthRate>0</FilthRate>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<!-- tentacles -->
+			<li>
+				<label>front left tentacle</label>
+				<capacities>
+				  <li>ScratchToxic</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_FL</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>14</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right tentacle</label>
+				<capacities>
+				  <li>ScratchToxic</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_FR</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>14</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<!-- back and middle tentacles -->
+			<li>
+				<label>middle left tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_ML</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>middle right tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_MR</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>back left tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_BL</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>back right tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_BR</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>MorrowRim_NetchJelly</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>18</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<race>
+		  <fleshType>MorrowRim_FleshNetch</fleshType>
+		  <bloodDef>MorrowRim_Filth_NetchBlood</bloodDef>
+		  <herdAnimal>true</herdAnimal>
+		  <body>MorrowRim_Jelly</body>
+		  <baseBodySize>1.4</baseBodySize>
+		  <baseHealthScale>1.75</baseHealthScale>
+		  <baseHungerRate>0.35</baseHungerRate>
+		  <foodType>VegetarianRoughAnimal</foodType>
+		  <leatherDef>MorrowRim_NetchLeather</leatherDef>
+		  <trainability>None</trainability>
+		  <gestationPeriodDays>7</gestationPeriodDays>
+		  <useMeatFrom>Muffalo</useMeatFrom>
+		  <roamMtbDays>5</roamMtbDays>
+		  <litterSizeCurve>
+			<points>
+			  <li>(0.5, 0)</li>
+			  <li>(1, 1)</li>
+			  <li>(2, 1.7)</li>
+			  <li>(2.5, 0.7)</li>
+			  <li>(3, 0)</li>
+			</points>
+		  </litterSizeCurve>
+		  <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+		  <wildness>0.60</wildness>
+
+		  <lifeExpectancy>20</lifeExpectancy>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.25</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.5</minAge>
+			  <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+			  <soundDeath>Pawn_Muffalo_Death</soundDeath>
+			  <soundCall>Pawn_Muffalo_Call</soundCall>
+			  <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+		  <MorrowRim_NetchJelly>80</MorrowRim_NetchJelly>
+		</butcherProducts>
+		<tradeTags>
+		  <li>AnimalCommon</li>
+		  <li>AnimalFarm</li>
+		  <li>AshlandAnimalCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef Name="MorrowRim_Netch" ParentName="AnimalKindBase">
+		<defName>MorrowRim_Netch</defName>
+		<label>netch</label>
+		<labelMale>netch bull</labelMale>
+		<labelFemale>netch betty</labelFemale>
+		<race>MorrowRim_Netch</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>3~9</wildGroupSize>
+		<lifeStages>
+		  <li>
+			<label>netch calf</label>
+			<labelPlural>netch calves</labelPlural>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/NetchCalf</texPath>
+			  <drawSize>1.5</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_Netch</texPath>
+			  <drawSize>1.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Netch</texPath>
+			  <drawSize>2.0</drawSize>
+			  <shadowData>
+				<volume>(0.6, 0.45, 0.45)</volume>
+				<offset>(0,0,-0.25)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<femaleGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/NetchBetty</texPath>
+			  <drawSize>1.6</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</femaleGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_Netch</texPath>
+			  <drawSize>1.9</drawSize>
+			</dessicatedBodyGraphicData>
+			<femaleDessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_NetchBetty</texPath>
+			  <drawSize>1.6</drawSize>
+			</femaleDessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Netch</texPath>
+			  <drawSize>2.6</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<femaleGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/NetchBetty</texPath>
+			  <drawSize>2.2</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</femaleGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_Netch</texPath>
+			  <drawSize>2.5</drawSize>
+			</dessicatedBodyGraphicData>
+			<femaleDessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_NetchBetty</texPath>
+			  <drawSize>2.2</drawSize>
+			</femaleDessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+  
+  	<!-- Retching netch -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_RetchingNetch</defName>
+		<label>retching netch</label>
+		<description>A large cnidarian found commonly in the ashlands. Netch, like the more basic sea dwelling cnidarians, lack lungs and instead breathe through the skin of their underbelly. A hard shell and toxic front tentacles make then a dangerous foe when enraged.\n\nThis breed of netch has been genetically modified to produce chemfuel. They are called retching netch due to the reaction one has upon inhaling the gas released after death. This smell is likely the result of chemfuel mixing with netch jelly. Comparatively more fragile, shorter lived and much more explosive than their unmodified cousins.</description>
+		<statBases>
+		  <ToxicResistance>1</ToxicResistance>
+		  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+		  <MoveSpeed>2.7</MoveSpeed>
+		  <MarketValue>350</MarketValue>
+		  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <MeatAmount>0</MeatAmount>
+		  <FilthRate>0</FilthRate>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<!-- tentacles -->
+			<li>
+				<label>front left tentacle</label>
+				<capacities>
+				  <li>ScratchToxic</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_FL</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>14</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right tentacle</label>
+				<capacities>
+				  <li>ScratchToxic</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_FR</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>14</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<!-- back and middle tentacles -->
+			<li>
+				<label>middle left tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_ML</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>middle right tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_MR</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>back left tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_BL</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>back right tentacle</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_TentacleAttackTool_BR</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>18</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<race>
+		  <deathActionWorkerClass>MorrowRim.DeathActionWorker_RetchingNetch</deathActionWorkerClass>
+		  <executionRange>6</executionRange>
+		  <fleshType>MorrowRim_FleshRetchingNetch</fleshType>
+		  <bloodDef>MorrowRim_Filth_RetchingNetchBlood</bloodDef>
+		  <herdAnimal>true</herdAnimal>
+		  <body>MorrowRim_Jelly</body>
+		  <baseBodySize>1.2</baseBodySize>
+		  <baseHealthScale>1.25</baseHealthScale>
+		  <baseHungerRate>0.35</baseHungerRate>
+		  <foodType>VegetarianRoughAnimal</foodType>
+		  <leatherDef>MorrowRim_NetchLeather</leatherDef>
+		  <trainability>None</trainability>
+		  <canBePredatorPrey>false</canBePredatorPrey>
+		  <gestationPeriodDays>7</gestationPeriodDays>
+		  <useMeatFrom>Muffalo</useMeatFrom>
+		  <roamMtbDays>5</roamMtbDays>
+		  <litterSizeCurve>
+			<points>
+			  <li>(0.5, 0)</li>
+			  <li>(1, 1)</li>
+			  <li>(2, 1.7)</li>
+			  <li>(2.5, 0.7)</li>
+			  <li>(3, 0)</li>
+			</points>
+		  </litterSizeCurve>
+		  <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+		  <wildness>0.50</wildness>
+
+		  <lifeExpectancy>15</lifeExpectancy>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.25</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.5</minAge>
+			  <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+			  <soundDeath>Pawn_Muffalo_Death</soundDeath>
+			  <soundCall>Pawn_Muffalo_Call</soundCall>
+			  <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+		  <MorrowRim_NetchJelly>40</MorrowRim_NetchJelly>
+		  <Chemfuel>20</Chemfuel>
+		</butcherProducts>
+		<tradeTags>
+		  <li>AnimalUncommon</li>
+		  <li>AnimalFarm</li>
+		  <li>AshlandAnimalRare</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef Name="MorrowRim_RetchingNetch" ParentName="AnimalKindBase">
+		<defName>MorrowRim_RetchingNetch</defName>
+		<label>retching netch</label>
+		<labelMale>retching netch bull</labelMale>
+		<labelFemale>retching netch betty</labelFemale>
+		<race>MorrowRim_RetchingNetch</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
+		<lifeStages>
+		  <li>
+			<label>retching netch calf</label>
+			<labelPlural>retching netch calves</labelPlural>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/RetchingNetch</texPath>
+			  <drawSize>1.3</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_RetchingNetch</texPath>
+			  <drawSize>1.3</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/RetchingNetch</texPath>
+			  <drawSize>1.6</drawSize>
+			  <shadowData>
+				<volume>(0.6, 0.45, 0.45)</volume>
+				<offset>(0,0,-0.25)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_RetchingNetch</texPath>
+			  <drawSize>1.6</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/RetchingNetch</texPath>
+			  <drawSize>2.0</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Netch/Dessicated_RetchingNetch</texPath>
+			  <drawSize>2.0</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

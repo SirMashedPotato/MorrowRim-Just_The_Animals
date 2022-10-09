@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>MorrowRim_ScampWork</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="ThinkNode_ConditionalHasFaction">
+			<subNodes>
+			
+				<li Class="ThinkNode_ConditionalPawnKind">
+					<pawnKind>MorrowRim_Scamp</pawnKind>
+					<subNodes>
+					
+						<!-- actual work -->
+					
+						<li Class="ThinkNode_ChancePerHour_Constant">
+						  <mtbHours>1.5</mtbHours>
+						  <subNodes>
+							<li Class="ThinkNode_ConditionalRequireCapacities">
+							  <requiredCapacities>
+								<li>Manipulation</li>
+							  </requiredCapacities>
+							  <subNodes>
+							  
+								<li Class="ThinkNode_ConditionalTrainableCompleted">
+									<trainable>Obedience</trainable>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+										  <tagToGive>TrainedAnimalBehavior</tagToGive>
+										  <subNodes>
+											<li Class="MorrowRim.JobGiver_Flick" />
+										  </subNodes>
+										</li>
+									</subNodes>
+								</li>
+							  
+								<li Class="ThinkNode_ConditionalTrainableCompleted">
+									<trainable>Release</trainable>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+										  <tagToGive>TrainedAnimalBehavior</tagToGive>
+										  <subNodes>
+											<li Class="MorrowRim.JobGiver_Clean" />
+										  </subNodes>
+										</li>
+									</subNodes>
+								</li>
+								
+							  </subNodes>
+							</li>
+						  </subNodes>
+						</li>
+						
+						<!-- insulting -->
+						<li Class="ThinkNode_ConditionalRequireCapacities">
+							<requiredCapacities>
+								<li>Consciousness</li>
+							</requiredCapacities>
+							<subNodes>
+							
+								<li Class="MorrowRim.ThinkNode_ConditionalScampInsults">
+									<subNodes>
+
+										<li Class="ThinkNode_ChancePerHour_Constant">
+											<mtbDays>5.0</mtbDays>
+											<subNodes>
+												<li Class="ThinkNode_ConditionalTrainableCompleted">
+													<trainable>Obedience</trainable>
+													<subNodes>
+														<li Class="ThinkNode_Tagger">
+														  <tagToGive>TrainedAnimalBehavior</tagToGive>
+														  <subNodes>
+															<li Class="MorrowRim.JobGiver_Insult" />
+														  </subNodes>
+														</li>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+		
+										<li Class="ThinkNode_ChancePerHour_Constant">
+											<mtbDays>3.3</mtbDays>
+											<subNodes>
+												<li Class="ThinkNode_ConditionalTrainableCompleted">
+													<trainable>Release</trainable>
+													<subNodes>
+														<li Class="ThinkNode_Tagger">
+														  <tagToGive>TrainedAnimalBehavior</tagToGive>
+														  <subNodes>
+															<li Class="MorrowRim.JobGiver_Insult" />
+														  </subNodes>
+														</li>
+													</subNodes>
+												</li>
+											</subNodes>
+										</li>
+								
+									</subNodes>
+								</li>
+							
+							</subNodes>
+						</li>
+					
+					</subNodes>
+				</li>
+				
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+</Defs>
