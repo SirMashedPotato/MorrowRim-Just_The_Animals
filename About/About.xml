@@ -11,10 +11,13 @@
 	</supportedVersions>
 	<description>A standalone version of the animals from MorrowRim, including anything directly relevant to them. Includes MorrowRim - Biomes Patch.\n\nBased on the 'Elder Scrolls' series by Bethesda Game Studios.
 	</description>
-	
-	<modDependenciesByVersion>
-	</modDependenciesByVersion>
 	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>vanillaexpanded.achievements</li>
 	</loadAfter>
 	<incompatibleWith>
       <li>SirMashedPotato.MorrowRim</li>
